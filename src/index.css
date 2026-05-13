@@ -87,7 +87,7 @@
   font-weight: 700;
   src: url("../src/assets/fonts/Manrope-Bold.ttf") format("truetype");
 }
-.footer-wrapper .footer-menu, .footer-wrapper .footer, .header-wrapper {
+.header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1508,68 +1508,82 @@ h4 {
 }
 
 .footer-wrapper {
-  min-height: 10%;
-  bottom: 0;
-  background-color: #222222;
+  background: #1f1f1f;
+  color: rgba(255, 255, 255, 0.82);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 .footer-wrapper .footer {
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1%;
-}
-@media (max-width: 767px) {
-  .footer-wrapper .footer {
-    flex-direction: column-reverse;
-  }
-}
-.footer-wrapper .footer .list-item {
-  padding-right: 4%;
-}
-.footer-wrapper .footer .list > a.item,
-.footer-wrapper .footer .list > .item {
-  margin-left: 0;
-  color: aliceblue;
-  font-size: 1.3rem;
-  font-family: "Comfortaa", "Verdana", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-@media (min-width: 1225px) {
-  .footer-wrapper .footer .list > a.item,
-.footer-wrapper .footer .list > .item {
-    font-size: 1.4rem;
-    font-family: "Comfortaa", "Verdana", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .footer-wrapper .footer-menu {
-  flex-wrap: wrap;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .footer-wrapper .footer-menu {
-    flex-basis: 100%;
-    justify-content: space-around;
-  }
+  flex: 1;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer-menu {
     display: none;
   }
 }
-.footer-wrapper .footer-menu .list,
+.footer-wrapper .footer-menu .ui.horizontal.list {
+  display: grid !important;
+  grid-template-columns: repeat(6, max-content);
+  gap: 34px;
+  margin: 0;
+}
+.footer-wrapper .footer-menu .list-item {
+  padding-right: 0 !important;
+  min-width: 0;
+}
 .footer-wrapper .footer-menu .list > a.item,
 .footer-wrapper .footer-menu .list > .item {
-  color: darkgrey;
+  margin-left: 0 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.2rem;
+  font-family: "Comfortaa", "Verdana", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
-.footer-wrapper .footer-menu .footer-info {
-  max-width: 25%;
+.footer-wrapper .footer-menu .list .list {
+  margin-top: 12px !important;
 }
-.footer-wrapper .footer-menu .ui.horizontal.list {
-  display: flex !important;
+.footer-wrapper .footer-menu .list .list > .item,
+.footer-wrapper .footer-menu .list .list > a.item {
+  display: block;
+  margin: 7px 0 !important;
+  color: rgba(255, 255, 255, 0.58) !important;
+  font-size: 1.05rem;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35;
 }
-.footer-wrapper .footer-menu .ui.horizontal.list .list > .item {
-  padding-left: 0px !important;
+.footer-wrapper .footer-info {
+  width: 330px;
+  flex-shrink: 0;
+  text-align: left;
+}
+.footer-wrapper .footer-info .list > .item {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 1rem;
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.footer-wrapper .footer-info .list > .item:first-child {
+  font-size: 1.15rem;
+  font-family: "Comfortaa", "Verdana", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.45;
+  margin-bottom: 14px;
 }
 
 /*# sourceMappingURL=index.css.map */
