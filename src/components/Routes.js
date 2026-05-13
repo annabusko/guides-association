@@ -15,7 +15,7 @@ const RoutesBlock = () => {
             <h2>{t('routes_header')}</h2>
             <div className="route-grid">
                 <Segment raised as='a'
-                    href='https://museumkossovo.by/ru/'
+                    href='https://planetabelarus.by/'
                     rel= 'noopener noreferrer'
                     target='_blank'
                     title= {t('architecture_link')} >
