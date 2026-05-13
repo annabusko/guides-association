@@ -1217,6 +1217,10 @@ h4 {
   padding: 15px;
 }
 
+.reasons-grid .ui.small.image {
+  width: 118px !important;
+}
+
 .content-main-image {
   height: calc(100vh * 0.4);
   background-size: cover !important;
@@ -1328,7 +1332,9 @@ h4 {
   font-style: normal;
 }
 .block-grid h4 {
-  padding-top: 5px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .about-grid {

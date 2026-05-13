@@ -5,12 +5,15 @@
     @include for-tablet {
         max-width: 97%;
     }
+
     @include for-desktop {
         max-width: 85%;
     }
+
     @include for-desktop-up {
         max-width: 70%;
     }
+
     text-align: justify;
 }
 
@@ -19,18 +22,23 @@
     padding-top: 2%;
     display: grid;
     text-align: center;
+
     & div {
         justify-self: center;
         line-height: 1.5;
         @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
     }
+
     h4 {
-        padding-top: 5px;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        font-weight: 700;
     }
 }
 
 .about-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
     @include for-phone {
         grid-template-columns: 1fr 1fr;
     }
@@ -42,29 +50,34 @@
 
     line-height: 2;
     @include font($size: 1.6rem, $family: $fontRoboto, $weight: 400);
+
     @include for-phone {
         @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
     }
-    
+
 }
 
 .content-wrapper-tab {
     display: block;
-    
+
     @include for-phone {
         padding: 20px 0px;
     }
+
     h3 {
         text-align: right;
         overflow-wrap: break-word;
         @include font($size: 2.4rem, $family: $fontComfortaa, $weight: 700);
+
         @include for-tablet {
             @include font($size: 1.9rem, $family: $fontComfortaa, $weight: 700);
         }
+
         @include for-phone {
             @include font($size: 1.2rem, $family: $fontComfortaa, $weight: 700);
             text-align: center;
         }
+
         @include for-small-phone {
             @include font($size: 1rem, $family: $fontComfortaa, $weight: 700);
         }
@@ -75,11 +88,12 @@
     }
 }
 
-.content-wrapper-guides{
+.content-wrapper-guides {
 
     padding: 20px 0px;
     line-height: 2;
     @include font($size: 1.6rem, $family: $fontRoboto, $weight: 400);
+
     @include for-phone {
         @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
     }
