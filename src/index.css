@@ -59,6 +59,34 @@
   src: local("Roboto"), local("Roboto-Regular"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
+/* manrope-regular */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+/* manrope-medium */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../src/assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+/* manrope-semibold */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+/* manrope-bold */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../src/assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
 .footer-wrapper .footer-menu, .footer-wrapper .footer, .header-wrapper {
   display: flex;
   flex-direction: row;
@@ -443,14 +471,14 @@ h4 {
 
 h1 {
   font-size: 6.5rem;
-  font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  font-family: "Manrope", "Verdana", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 @media (max-width: 767px) {
   h1 {
     font-size: 5rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
+    font-family: "Manrope", "Verdana", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
@@ -458,7 +486,7 @@ h1 {
 @media (max-width: 340px) {
   h1 {
     font-size: 4.5rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
+    font-family: "Manrope", "Verdana", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
@@ -536,91 +564,152 @@ h4 {
   margin: 0;
   position: absolute;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
   width: 100%;
   text-align: center;
+  padding: 8px 24px;
+  background: rgba(18, 18, 18, 0.32);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+.header-wrapper .main-menu {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .header-wrapper .main-menu {
-    font-size: 1.2rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
-    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: "Manrope", "Verdana", sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
 }
 @media (min-width: 992px) {
   .header-wrapper .main-menu {
-    font-size: 1.4rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
-    font-weight: 900;
+    font-size: 1.25rem;
+    font-family: "Manrope", "Verdana", sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
 }
 @media (min-width: 1225px) {
   .header-wrapper .main-menu {
-    font-size: 2rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
-    font-weight: 900;
+    font-size: 1.55rem;
+    font-family: "Manrope", "Verdana", sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
+}
+.header-wrapper .main-menu > .item, .header-wrapper .main-menu > .ui.dropdown.item {
+  border-radius: 999px !important;
+  padding: 11px 22px !important;
+  margin: 0 6px !important;
+  color: rgba(255, 255, 255, 0.94) !important;
+  background: transparent !important;
+  font-family: "Manrope", "Verdana", sans-serif !important;
+  font-weight: 500 !important;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.header-wrapper .main-menu > .item:hover, .header-wrapper .main-menu > .ui.dropdown.item:hover, .header-wrapper .main-menu > .active.item, .header-wrapper .main-menu > .ui.dropdown.item.active, .header-wrapper .main-menu > .ui.dropdown.item.visible {
+  background: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.header-wrapper .main-menu .dropdown.icon {
+  margin-left: 8px !important;
+  opacity: 0.75;
+}
+.header-wrapper .main-menu .ui.dropdown .menu {
+  margin-top: 12px !important;
+  padding: 10px !important;
+  min-width: 260px !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2) !important;
+  overflow: hidden;
+}
+.header-wrapper .main-menu .ui.dropdown .menu > .item {
+  background: transparent !important;
+  color: #222 !important;
+  padding: 14px 18px !important;
+  border-radius: 12px !important;
+  font-family: "Manrope", "Verdana", sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.header-wrapper .main-menu .ui.dropdown .menu > .item:hover {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #111 !important;
 }
 .header-wrapper .header-flex-row {
   align-self: center;
 }
-.header-wrapper .header-segment {
-  background: rgba(0, 0, 0, 0);
+.header-wrapper .header-switcher {
+  background: rgba(255, 255, 255, 0.12);
   box-shadow: none;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
   color: white;
+  padding: 8px 14px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .header-wrapper .header-segment {
-    font-size: 1.2rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  .header-wrapper .header-switcher {
+    font-size: 1rem;
+    font-family: "Manrope", "Verdana", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 }
 @media (min-width: 992px) {
-  .header-wrapper .header-segment {
-    font-size: 1.4rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  .header-wrapper .header-switcher {
+    font-size: 1.1rem;
+    font-family: "Manrope", "Verdana", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 }
 @media (min-width: 1225px) {
-  .header-wrapper .header-segment {
-    font-size: 1.8rem;
-    font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  .header-wrapper .header-switcher {
+    font-size: 1.25rem;
+    font-family: "Manrope", "Verdana", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 }
-.header-wrapper .header-segment span {
-  padding: 0 20px;
+.header-wrapper .header-switcher span {
+  padding: 0 12px;
 }
 .header-wrapper .header-button {
-  margin: 20px;
+  margin: 12px;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-radius: 999px !important;
 }
 
 .logo {
-  width: 10%;
+  width: 8%;
 }
 @media (max-width: 767px) {
   .logo {
-    width: 20%;
+    width: 22%;
   }
 }
 
 .ui.menu.vertical-menu {
-  font-size: 2rem;
-  font-family: "Montserrat Alternates", "Verdana", sans-serif;
+  font-size: 1.4rem;
+  font-family: "Manrope", "Verdana", sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: rgba(0, 0, 0, 0.8);
-  max-width: 70%;
+  background-color: rgba(18, 18, 18, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 72%;
   text-align: left;
 }
 
@@ -813,23 +902,35 @@ h4 {
   overflow: hidden;
 }
 
-.carrousel_wrapper, .carrousel_image {
+.carrousel_wrapper,
+.carrousel_image {
   height: calc(100vh*0.6);
 }
 @media (max-width: 767px) {
-  .carrousel_wrapper, .carrousel_image {
+  .carrousel_wrapper,
+.carrousel_image {
     height: calc(100vh*0.4);
   }
 }
 @media (min-width: 1225px) {
-  .carrousel_wrapper, .carrousel_image {
+  .carrousel_wrapper,
+.carrousel_image {
     height: calc(100vh*0.8);
   }
 }
 
 .carrousel_image {
+  position: relative;
   background-size: cover !important;
   background-position: center !important;
+}
+
+.carrousel_image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.02) 35%, rgba(0, 0, 0, 0.08));
+  pointer-events: none;
 }
 
 /* Arrows */
@@ -877,7 +978,8 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-arrow, .slick-dots {
+.slick-arrow,
+.slick-dots {
   z-index: 1;
 }
 

@@ -10,7 +10,7 @@ import FilterBlock from './FilterInterpreters';
 import * as filterLodash from 'lodash/filter';
 import * as isEmptyLodash from 'lodash/isEmpty';
 
-const img_guides_main = require('../assets/images/different/guides.jpg');
+const img_guides_main = require('../assets/images/different/about.group.jpg');
 
 const MenuTitle = ({ title, tg }) => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import React, { Component, Fragment, useState } from 'react';
-import { Image, Segment, Menu } from 'semantic-ui-react';
+import { Image, Menu } from 'semantic-ui-react';
 import logo from '../assets/images/logo.svg';
 
 import MenuItems from './MenuItems';
@@ -38,9 +38,9 @@ class HeaderDividing extends Component {
           :
           <HorizontalMenu />
         }
-        <Segment className="header-segment" compact>
+        <div className="header-switcher">
           <LanguageRadio />
-        </Segment>
+        </div>
       </div>
 
     )
