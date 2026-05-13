@@ -8,6 +8,11 @@ import { useTranslation } from "react-i18next";
 function MenuItems() {
     const { t } = useTranslation();
     const [activeItem, setActiveItem] = useState(window.location.hash.substr(1));
+
+    const aboutActive = ['/history', 'history', '/rules', 'rules', '/board', 'board', '/join', 'join'].includes(activeItem);
+    const guidesActive = ['/guide-main', 'guide-main', '/guide1-search', 'guide1-search', '/guide2-search', 'guide2-search'].includes(activeItem);
+    const trainingsActive = ['/certification', 'certification', '/professional-development', 'professional-development', '/seminars', 'seminars'].includes(activeItem);
+
     return (
         <Fragment>
             <Menu.Item
@@ -18,7 +23,7 @@ function MenuItems() {
                 {t('main_menu')}
             </Menu.Item>
 
-            <Dropdown item text={t('menu_about')}>
+            <Dropdown item text={t('menu_about')} active={aboutActive}>
                 <Dropdown.Menu direction='left'>
                     <Dropdown.Item text={t('menu_history')} as={Link} to='/history' value="history"
                         active={activeItem === '/history' || activeItem === 'history'}
@@ -36,7 +41,7 @@ function MenuItems() {
                 </Dropdown.Menu>
             </Dropdown>
 
-            <Dropdown item text={t('menu_guide')}>
+            <Dropdown item text={t('menu_guide')} active={guidesActive}>
                 <Dropdown.Menu direction='left'>
                     <Dropdown.Item text={t('menu_guide-main')} as={Link} to='/guide-main' value="guide-main"
                         active={activeItem === '/guide-main' || activeItem === 'guide-main'}
@@ -50,7 +55,7 @@ function MenuItems() {
                 </Dropdown.Menu>
             </Dropdown>
 
-            <Dropdown item text={t('menu_trainings')} >
+            <Dropdown item text={t('menu_trainings')} active={trainingsActive}>
                 <Dropdown.Menu direction='left'>
                     <Dropdown.Item text={t('menu_certification')} as={Link} to='/certification' value="certification"
                         active={activeItem === '/certification' || activeItem === 'certification'}

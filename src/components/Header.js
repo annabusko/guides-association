@@ -1,5 +1,6 @@
 import React, { Component, Fragment, useState } from 'react';
 import { Image, Menu } from 'semantic-ui-react';
+import { useTranslation } from 'react-i18next';
 import logo from '../assets/images/logo.svg';
 
 import MenuItems from './MenuItems';
@@ -49,7 +50,7 @@ class HeaderDividing extends Component {
 
 
 const VerticalMenu = () => {
-
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -57,17 +58,20 @@ const VerticalMenu = () => {
       <div className="header-flex-row">
         <BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
-      <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
+      <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" />
       <VerticalMenuBlock menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </Fragment>
   );
 }
 
 const HorizontalMenu = () => {
+  const { t } = useTranslation();
   return (
     <Fragment>
-      <Image verticalAlign='middle' src={logo} alt="Белорусское общество экскурсоводов и гидов-переводчиков" className="logo" />
-      <div className="header-flex-row">
+      <div className="header-brand">
+        <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" />
+      </div>
+      <div className="header-nav">
         <Menu className="main-menu" secondary inverted>
           <MenuItems />
         </Menu>
