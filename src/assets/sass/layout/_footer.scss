@@ -1,0 +1,75 @@
+.footer-wrapper {
+    min-height: 10%;
+    bottom: 0;
+    background-color: #222222;
+    .footer-copyright {
+        min-height: 30%;
+        bottom: 0;
+        .ui.segment {
+            text-align: center;
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.32) !important;
+            span {
+                @include font($size: 2rem, $family: $fontComfortaa, $weight: 900);
+                @include for-small-phone {
+                    @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 700);
+                }
+            }
+        }
+
+        .social-list {
+            padding-left: 2vw;
+        }
+    }
+
+    .footer {
+        @extend %horizontal-flex;
+        @include for-phone{
+            flex-direction: column-reverse;
+        }
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1%;
+        .list-item {
+            padding-right: 4%;
+        }
+        .list > a.item,
+        .list > .item {
+            margin-left: 0;
+            color: aliceblue;
+            @include font($size: 1.3rem, $family: $fontComfortaa, $weight: 700);
+            @include for-desktop-up{
+                @include font($size: 1.4rem, $family: $fontComfortaa, $weight: 700);
+            }
+        }
+    }
+
+    .footer-menu {
+        
+        @extend %horizontal-flex;
+        @include for-tablet {
+            flex-basis: 100%;
+            justify-content: space-around;
+        }
+        
+        @include for-phone{
+            display: none;
+        }
+        flex-wrap: wrap;
+        .list,
+        .list > a.item,
+        .list > .item {
+            color: darkgrey;
+        }
+        .footer-info {
+            max-width: 25%;
+        }
+
+        .ui.horizontal.list {
+            display: flex !important;
+            & .list > .item {
+                padding-left: 0px !important;
+            }
+        }
+    }
+}

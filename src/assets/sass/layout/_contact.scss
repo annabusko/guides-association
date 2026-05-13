@@ -1,0 +1,25 @@
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh * 0.5);
+    @include font($size: 1.6rem, $family: $fontComfortaa, $weight: 700);
+    &>div {
+        flex-basis: 50%;
+        @include for-phone {
+            padding-bottom: 20px;
+        }
+    }
+    @include for-phone {
+        max-width: 90%;
+        flex-direction: column-reverse;
+    }
+}
+
+.adress-wrapper {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    span {
+        padding: 5px;
+    }
+}

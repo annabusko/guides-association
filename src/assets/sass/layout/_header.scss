@@ -1,0 +1,60 @@
+.header-wrapper {
+    margin: 0;
+    position: absolute;
+    @extend %horizontal-flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    & .main-menu {
+        @include for-tablet {
+            @include font($size: 1.2rem, $family: $fontMonserrat, $weight: 900);
+        }
+        @include for-desktop {
+            @include font($size: 1.4rem, $family: $fontMonserrat, $weight: 900);
+        }
+        @include for-desktop-up {
+            @include font($size: 2rem, $family: $fontMonserrat, $weight: 900);
+        }
+    }
+    
+    & .header-flex-row {
+        align-self: center;
+    }
+    & .header-segment {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        border: none;
+        color: white;
+        @include for-tablet {
+            @include font($size: 1.2rem, $family: $fontMonserrat, $weight: 700);
+        }
+        @include for-desktop {
+            @include font($size: 1.4rem, $family: $fontMonserrat, $weight: 700);
+        }
+        @include for-desktop-up {
+            @include font($size: 1.8rem, $family: $fontMonserrat, $weight: 700);
+        }
+        & span {
+            padding: 0 20px;
+        }
+    }
+
+    & .header-button {   
+        margin: 20px;
+    }
+}
+
+.logo {
+    width: 10%; 
+    @include for-phone{
+        width: 20%;
+    } 
+}
+.ui.menu.vertical-menu{
+    @include font($size:2rem, $family: $fontMonserrat, $weight: 700);
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 70%;
+    text-align: left;
+ }

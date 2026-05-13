@@ -1,0 +1,45 @@
+.content-wrapper-board{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.board-card {
+    h4{
+        @include font($size: 1.6rem, $family: $fontComfortaa, $weight: 700);
+        margin-bottom: 5px;
+    }
+    p {
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+    }
+    .board-extra p {
+        text-align: center;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 700);
+    }
+    .meta{
+        text-align: center;
+    }
+}
+
+ 
+  .ui.card.board-single  {
+        width: 65% !important;
+
+        @include for-desktop-up {
+            width: 40% !important;
+        }
+
+        @include for-tablet {
+            width: 50% !important;
+        }
+        @include for-phone {
+            width: 90% !important;
+        }
+    }
+
+.boardTab .grid{
+    @include for-phone {
+        flex-direction: column-reverse;
+        &>[class*="five wide"].column,&>[class*="eleven wide"].column {
+            width: 100% !important;
+        }
+    }
+}

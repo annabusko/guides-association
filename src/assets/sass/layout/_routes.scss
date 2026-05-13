@@ -1,0 +1,39 @@
+
+.route-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    & .route-left {
+        justify-self: end;
+        align-self: stretch;
+    }
+    & .route-right {
+        justify-self: start;
+        align-self: stretch;
+    }
+
+    .route-content {
+        padding: 10px;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: calc(100vh * 0.2);
+        @include for-desktop-up {
+            height: calc(100vh * 0.35);
+        }
+    }
+
+    a{
+        color: black;
+    }
+    .ui.segment {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.5;
+        @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
+        @include for-phone {
+            @include font($size: 1rem, $family: $fontRoboto, $weight: 400);
+        }
+    }
+}

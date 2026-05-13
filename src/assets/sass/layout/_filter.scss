@@ -1,0 +1,11 @@
+.filter-container {
+    text-align: right;
+    margin: 20px 0;
+    display: flex;
+    @include for-phone {
+        flex-wrap: wrap;
+    }
+    span {
+        @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 400);
+    }
+}

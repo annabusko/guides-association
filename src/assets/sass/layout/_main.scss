@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4 {
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  @include font($size: 6.5rem, $family: $fontMonserrat, $weight: 900);
+  @include for-phone {
+    @include font($size: 5rem, $family: $fontMonserrat, $weight: 900);
+  }
+  @include for-small-phone {
+    @include font($size: 4.5rem, $family: $fontMonserrat, $weight: 900);
+  }
+}
+h2 {
+  @include font($size: 3.3rem, $family: $fontComfortaa, $weight: 700);
+}
+
+h3 {
+  @include font($size: 2.6rem, $family: $fontComfortaa, $weight: 700);
+  @include for-phone {
+    @include font($size: 1.7rem, $family: $fontComfortaa, $weight: 700);
+  }
+  @include for-small-phone {
+    @include font($size: 1.4rem, $family: $fontComfortaa, $weight: 700);
+  }
+}
+
+h4 {
+  @include font($size: 1.9rem, $family: $fontComfortaa, $weight: 700);
+  margin-bottom: 5px;
+}
+
+.main-transition-enter {
+  opacity: 0.01;
+}
+
+.main-transition-enter.main-transition-enter-active {
+  opacity: 1;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+  transition-duration: 300ms;
+  transition-delay: 500ms;
+}
+
+.main-transition-exit {
+  opacity: 1;
+}
+
+.main-transition-exit.main-transition-exit-active {
+  opacity: 0.01;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in;
+  transition-duration: 200ms;
+}
+
+.image-link {
+  transition: transform 0.7s;
+  &:hover {
+    transform: scale(0.9);
+  }
+}

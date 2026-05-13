@@ -1,0 +1,525 @@
+[
+  {
+    "id": 0,
+    "name": "Барабанов Вадим / Barabanov Wadim",
+    "email": "wadim2016barabanov@gmail.com",
+    "phone": "+375-29-1972888",
+    "lang": "Русский / Russian; Белорусский / Belarusian",
+    "img": "guides/0.jpg",
+    "city": "Гомель / Gomel"
+  },
+  {
+    "id": 1,
+    "name": "Апанасевич Евгений / Apanasevich Yvgeny",
+    "email": "gidbelarus@gmail.com",
+    "phone": "+375-29-6543817",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/1.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 2,
+    "name": "Бусько Сергей / Busko Siarhei",
+    "email": "buskosiarhei@gmail.com",
+    "phone": "+375-29-7697529",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/2.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 3,
+    "name": "Гайдук Татьяна / Haiduk Tatsiana",
+    "email": "gaiduchka@gmail.com",
+    "phone": "+375-29-8632150",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/3.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 4,
+    "name": "Гришкевич Светлана / Grishkevich Svetlana",
+    "email": "krainasveta@gmail.com",
+    "phone": "+375-25-9046989",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 5,
+    "name": "Давидович Владимир / Davidovich Vladimir",
+    "email": "dvv19582007@gmail.com",
+    "phone": "+375-29-1137834",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/5.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 6,
+    "name": "Демьянов Сергей / Demyanov Sergey",
+    "email": "damienne@mail.ru",
+    "phone": "+375-29-1024468",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Пинск / Pinsk"
+  },
+  {
+    "id": 7,
+    "name": "Дергун Александр / Dergun Alexandr",
+    "email": "dergun_an@mail.ru",
+    "phone": "+375-29-7584125",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 8,
+    "name": "Доморацкая Мария / Domoratskaya Maria",
+    "email": "leto_mogilev@mail.ru",
+    "phone": "+375-29-3577103",
+    "lang": "Русский / Russian",
+    "city": "Могилев / Mogilev"
+  },
+  {
+    "id": 9,
+    "name": "Жданок Наталья / Zhdanok Natalia",
+    "email": "natazdann@yandex.ru",
+    "phone": "+375-29-5727543",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 10,
+    "name": "Карпенко Елена / Karpenko Elena",
+    "email": "intourist@mail.ru",
+    "phone": "+375-29-6224812",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Могилев / Mogilev"
+  },
+  {
+    "id": 11,
+    "name": "Карсаков Дмитрий / Karsakov Dzmitry",
+    "email": "dmitrii.korsakov.msu@mail.ru",
+    "phone": "+375-25-6912353",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/11.jpg",
+    "city": "Могилев / Mogilev"
+  },
+  {
+    "id": 12,
+    "name": "Манкевич Оксана / Mankevich Oksana",
+    "email": "oksmankevich@gmail.com",
+    "phone": "+375-29-3215642",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 13,
+    "name": "Масалевич Михаил / Masalevich Mikhail",
+    "email": "masalevichm@icloud.com",
+    "phone": "+375-29-3351357",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/13.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 14,
+    "name": "Нарынкевич Михаил / Narynkevich Mikhail",
+    "email": "mn_kiev@mail.ru",
+    "phone": "+375-29-7173836",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/14.jpg",
+    "city": "Гродно / Grodno"
+  },
+  {
+    "id": 15,
+    "name": "Печенова Галина / Pechenova Galina",
+    "email": "galinapechenova@gmail.com",
+    "phone": "+375-29-6549502",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 16,
+    "name": "Бойко Татьяна / Boiko Tatsiana",
+    "email": "tania.lev@tut.by",
+    "phone": "+375-29-6681917",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 17,
+    "name": "Петухова Наталья / Petukhova Natallia",
+    "email": "nata1654@mail.ru",
+    "phone": "+375-29-5604465",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 18,
+    "name": "Савощик Алексей / Savoschik Alexei",
+    "email": "safa148@yandex.ru",
+    "phone": "+375-29-7024284",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Новогрудок / Novogrudok"
+  },
+  {
+    "id": 19,
+    "name": "Сенькевич Олеся / Senkevich Olesia",
+    "email": "oisenkevich@rambler.ru",
+    "phone": "+375-29-5536187",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 20,
+    "name": "Скворчевский Дмитрий / Skvorchevski Dzmitry",
+    "email": "zmicerbelapol@inbox.ru",
+    "phone": "+375-29-2583587",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 21,
+    "name": "Слизкая Ксения / Slizkaya Kseniya",
+    "email": "belksu@gmail.com",
+    "phone": "+375-29-1469014",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 22,
+    "name": "Тюхай Валентина /Tukhai Valentina",
+    "email": "kareta-brest@mail.ru",
+    "phone": "+375-29-8299994",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/22.jpg",
+    "city": "Брест / Brest"
+  },
+  {
+    "id": 23,
+    "name": "Юрчик Денис / Jurchik Denis",
+    "email": "gaiduchka@gmail.com",
+    "phone": "tulpan4@yandex.by",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 24,
+    "name": "Яцкевич Татьяна / Yatskevich Tatsiana",
+    "email": "Irist69@mail.ru",
+    "phone": "+375-29-7620234",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 25,
+    "name": "Акудович Тимофей / Akudovich Timofei",
+    "email": "cymus1@gmail.com",
+    "phone": "+375-29-5571124",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 26,
+    "name": "Лигер Павел / Liher Pavel",
+    "email": "p.broun@mail.ru",
+    "phone": "+375-44-5329606",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 27,
+    "name": "Даниленко Вероника / Danilenko Veronika",
+    "email": "danilenko_veronika@mail.ru",
+    "phone": "+375-29-8657562",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Гомель / Gomel"
+  },
+  {
+    "id": 28,
+    "name": "Жерко Юрий / Jerko Yuri",
+    "email": "vuste.life@gmail.com",
+    "phone": "+375-29-2554055",
+    "lang": "Русский / Russian",
+    "city": "Браслав / Braslav"
+  },
+  {
+    "id": 29,
+    "name": "Лысенко Александра / Lysenko Alexandra",
+    "email": "L.alexa68@yandex.ru",
+    "phone": "+375-29-8836385",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Гродно / Grodno"
+  },
+  {
+    "id": 30,
+    "name": "Хмельницкая Екатерина / Khmelnitskaya Ekaterina",
+    "email": "belarus@minsk-travel.by",
+    "phone": "+375-29-1368101",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 31,
+    "name": "Зыкович Кристина / Zykovich Kristina",
+    "email": "NewDelhi91@mail.ru",
+    "phone": "+375-29-8784899",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 32,
+    "name": "Крень Елена / Kren Elena",
+    "email": "pobelarusi@tut.by",
+    "phone": "+375-29-8871442",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 33,
+    "name": "Дударенок Надежда / Dudarenok Nadezhda",
+    "email": "brasduda78@tut.by",
+    "phone": "+375-33-3709916",
+    "lang": "Русский / Russian",
+    "city": "Браслав / Braslav"
+  },
+  {
+    "id": 34,
+    "name": "Коровай Виктор / Korovay Victor",
+    "email": "vik.kor@tut.by",
+    "phone": "+375-29-6400615",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 35,
+    "name": "Дащинская Ольга / Dashchinskaya Olga",
+    "email": "troskova@yandex.ru",
+    "phone": "+375-29-3331575",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 36,
+    "name": "Масленченко Юлия / Maslenchenko Julia",
+    "email": "julia119227@gmail.com",
+    "phone": "+375-29-2887795",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 37,
+    "name": "Зинкевич Ольга / Zinkevich Olga",
+    "email": "volhaz1983@yandex.ru",
+    "phone": "+375-29-7024420",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Пружаны / Pruzhany"
+  },
+  {
+    "id": 38,
+    "name": "Никонович Татьяна / Nikonovich Tatsiana",
+    "email": "tosska822@mail.ru",
+    "phone": "+375-29-5234258",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Барановичи / Baranovichi"
+  },
+  {
+    "id": 39,
+    "name": "Балашова Людмила / Balashova Ludmila",
+    "email": "lusya_balashova@mail.ru",
+    "phone": "+375-44-7139230",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 40,
+    "name": "Савицкая Евгения / Savitskaya Eugenia",
+    "email": "glockhen@gmail.com",
+    "phone": "+375-44-7493219",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 41,
+    "name": "Мирончик Мария / Mironchik Maria",
+    "email": "mardrev@gmail.com",
+    "phone": "+375-29-7646841",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 42,
+    "name": "Абрамчик Екатерина / Abramchik Ekaterina",
+    "email": "katyadili2013@gmail.com",
+    "phone": "+375-29-7016209",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 43,
+    "name": "Богданова Анна / Bogdanova Anna",
+    "email": "ann.bananova13@gmail.com",
+    "phone": "+375-44-5323272",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 44,
+    "name": "Фликоп-Свита Галина / Flikop-Svita Halina",
+    "email": "halinka13@yandex.by",
+    "phone": "+375-29-7820411",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/44.jpg",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 45,
+    "name": "Давиденко Вера / Davidenko Vera",
+    "email": "borisov_tur@tut.by",
+    "phone": "+375-29-3324038",
+    "lang": "Русский / Russian",
+    "city": "Борисов / Borisov"
+  },
+  {
+    "id": 46,
+    "name": "Яротов Алексей / Yarotau Alexei",
+    "email": "yarotau@gmail.com",
+    "phone": "+375-25-6609470",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 47,
+    "name": "Черевикова Юлия / Cherevikova Julia",
+    "email": "luferova333@mail.ru",
+    "phone": "+375-29-5750257",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 48,
+    "name": "Кузьма Дмитрий / Kuzma Dzmitry",
+    "email": "zmitok@list.ru",
+    "phone": "+375-29-7646708",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Дятлово / Dyatlovo"
+  },
+  {
+    "id": 49,
+    "name": "Петрович Алексей / Petrovich Alexei",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-3635740",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 50,
+    "name": "Мох Елена / Mokh Elena",
+    "email": "dokunovabsu@tut.by",
+    "phone": "+375-29-5765343",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 51,
+    "name": "Иванов Алексей / Ivanov Alexei",
+    "email": "L.alexa68@yandex.ru",
+    "phone": "+375-25-9396353",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "img": "guides/51.jpg",
+    "city": "Молодечно / Molodechno"
+  },
+  {
+    "id": 52,
+    "name": "Жвирко Ольга / Zhvirko Olga",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-5085045",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 53,
+    "name": "Филипчик Денис / Filipchik Denis",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-33-6976011",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Глубокое / Glubokoye"
+  },
+  {
+    "id": 54,
+    "name": "Савицкая Екатерина / Savitskaya Ekaterina",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-5789546",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 55,
+    "name": "Изергина Елена / Izergina Alena",
+    "email": "alena.izergina@gmail.com ",
+    "phone": "+375-33-3091640",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Полоцк / Polotsk"
+  },
+  {
+    "id": 56,
+    "name": "Касьянова Екатерина / Kasyanova Ekaterina",
+    "email": "ekaterinizavrrr@gmail.com",
+    "phone": "+375-29-1598120",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Пинск / Pinsk"
+  },
+  {
+    "id": 57,
+    "name": "Кузнецов Владимир / Kuznetsov Vladimir",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-7721691",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 58,
+    "name": "Сиваева Надежда / Sivaeva Nadezhda",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-8535749",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Логойск / Logoisk"
+  },
+  {
+    "id": 59,
+    "name": "Ярошук Марина / Yaroshuk Marina",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-5825181",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Новогрудок / Novogrudok"
+  },
+  {
+    "id": 60,
+    "name": "Захаренко Екатерина / Zakharenko Ekaterina",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-25-9169180",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 61,
+    "name": "Храмцова Виктория / Hramtsova Victoria",
+    "email": "guidebelarus@yandex.by",
+    "phone": "+375-29-2105748",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Минск / Minsk"
+  },
+  {
+    "id": 62,
+    "name": "Кривопуст Антон / Krivopust Anton",
+    "email": "anton.krivopust@yandex.ru",
+    "phone": "+375-29-1176439",
+    "lang": "Белорусский / Belarusian; Русский / Russian",
+    "city": "Кореличи / Korelichi"
+  },
+  {
+    "id": 63,
+    "name": "Барковская Оксана / Barkovskaya Oksana",
+    "email": "dvv19582007@gmail.com",
+    "phone": "+375-29-3021033",
+    "lang": "Русский / Russian",
+    "city": "Минск / Minsk"
+  }
+]

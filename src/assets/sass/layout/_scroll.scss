@@ -1,0 +1,16 @@
+  .scroll-to-top{
+    opacity: 0.4;
+    text-align: end;
+    position: fixed;
+    bottom: 50%;
+    right: 10px;
+    width: 75px;
+    height: 75px;
+    &:hover {
+      opacity: 1;
+    }
+
+    & div{
+        height: 100%;
+    }
+}

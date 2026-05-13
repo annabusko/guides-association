@@ -1,0 +1,9 @@
+.guides-description {
+    clear: none !important;
+}
+
+.ui.three.cards > .guides-search {
+    @include for-tablet {
+        width: calc(50% - 2em);
+    }
+}

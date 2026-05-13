@@ -1,0 +1,33 @@
+@mixin for-small-phone {
+  @media (max-width: 340px) {
+    @content;
+  }
+}
+@mixin for-phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (max-width: 991px) and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1225px) 
+  { @content; }
+}
+
+
+@mixin font($size, $family, $weight: 400, $style: normal) {
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+}

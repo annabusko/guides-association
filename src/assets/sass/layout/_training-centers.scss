@@ -1,0 +1,22 @@
+.trainingTab{
+    margin: 20px  0;
+    h4{
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+   p{ line-height: 2;
+    @include font($size: 1.5rem, $family: $fontRoboto, $weight: 400);
+    @include for-phone {
+        @include font($size: 1.2rem, $family: $fontRoboto, $weight: 400);
+    }}
+}
+
+.content-wrapper-trainings{
+    padding-left: 0;
+    margin: 0 5%;
+
+    .content-text{
+        padding: 0;
+    }
+}
