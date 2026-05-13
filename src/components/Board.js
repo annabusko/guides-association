@@ -129,7 +129,7 @@ const comission = [
 const BoardCard = ({ data }) => (
   <Card centered color={data.color} className={data.classTitle}>
 
-    <Image src={data.src} wrapped ui={false} />
+    <Image src={data.src} wrapped ui={false} alt="" />
     <Card.Content>
       <Card.Header>{data.name}</Card.Header>
       {!data.meta ? null : <Card.Meta>
