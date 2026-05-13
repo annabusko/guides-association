@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretSquareUp } from '@fortawesome/free-regular-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export default class ScrollToTop extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class ScrollToTop extends Component {
       <div className="scroll-to-top">
         {is_visible && (
           <div onClick={() => this.scrollToTop()} className="button button-scroll">
-            <FontAwesomeIcon icon={faCaretSquareUp} size="7x"/>
+            <FontAwesomeIcon icon={faChevronUp} size="7x"/>
           </div>
         )}
       </div>

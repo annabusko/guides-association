@@ -1113,19 +1113,31 @@ h4 {
 }
 
 .scroll-to-top {
-  opacity: 0.4;
-  text-align: end;
   position: fixed;
+  cursor: pointer;
   bottom: 50%;
-  right: 10px;
-  width: 75px;
-  height: 75px;
+  right: 14px;
+  opacity: 0.55;
+  z-index: 2;
+  transition: opacity 0.2s ease;
 }
 .scroll-to-top:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 .scroll-to-top div {
   height: 100%;
+}
+.scroll-to-top button,
+.scroll-to-top svg,
+.scroll-to-top i,
+.scroll-to-top .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 18px !important;
+  background: rgba(120, 120, 120, 0.32) !important;
+  color: white !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .route-grid {
