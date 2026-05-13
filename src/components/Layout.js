@@ -31,7 +31,7 @@ const RoutesWrapper = ({ location }) => (
       <Route path='/rules' render={() => <RulesBlock />} />
       <Route path='/join' render={() => <JoinBlock />} />
       <Route path='/board' render={() => <BoardBlock />} />
-      <Route path='/professional-development'render={() => <TrainingCenters />} />
+      <Route path='/professional-development' render={() => <TrainingCenters />} />
       <Route path='/certification' render={() => <CertificationBlock />} />
       <Route path='/contact' render={() => <ContactBlock />} />
       

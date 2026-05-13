@@ -2,25 +2,6 @@
     min-height: 10%;
     bottom: 0;
     background-color: #222222;
-    .footer-copyright {
-        min-height: 30%;
-        bottom: 0;
-        .ui.segment {
-            text-align: center;
-            color: aliceblue;
-            background-color: rgba(0, 0, 0, 0.32) !important;
-            span {
-                @include font($size: 2rem, $family: $fontComfortaa, $weight: 900);
-                @include for-small-phone {
-                    @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 700);
-                }
-            }
-        }
-
-        .social-list {
-            padding-left: 2vw;
-        }
-    }
 
     .footer {
         @extend %horizontal-flex;
