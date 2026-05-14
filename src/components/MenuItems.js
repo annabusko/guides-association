@@ -47,7 +47,11 @@ function MenuItems() {
         {t("main_menu")}
       </Menu.Item>
 
-      <Dropdown item text={t("menu_about")} active={aboutActive || undefined}>
+      <Dropdown
+        item
+        text={t("menu_about")}
+        className={aboutActive ? "active" : ""}
+      >
         <Dropdown.Menu direction="left">
           <Dropdown.Item
             text={t("menu_history")}
@@ -84,7 +88,11 @@ function MenuItems() {
         </Dropdown.Menu>
       </Dropdown>
 
-      <Dropdown item text={t("menu_guide")} active={guidesActive || undefined}>
+      <Dropdown
+        item
+        text={t("menu_guide")}
+        className={guidesActive ? "active" : ""}
+      >
         <Dropdown.Menu direction="left">
           <Dropdown.Item
             text={t("menu_guide-main")}
@@ -120,7 +128,7 @@ function MenuItems() {
       <Dropdown
         item
         text={t("menu_trainings")}
-        active={trainingsActive || undefined}
+        className={trainingsActive ? "active" : ""}
       >
         <Dropdown.Menu direction="left">
           <Dropdown.Item
