@@ -1,11 +1,18 @@
 .reasons-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    @include for-phone{
+
+    @include for-phone {
         grid-template-columns: 1fr 1fr;
     }
 
-    .reasons-content{
+    .reasons-content {
         text-align: justify;
         padding: 15px;
+        
     }
+
+}
+
+.reasons-grid .ui.small.image {
+    width: 118px !important;
 }

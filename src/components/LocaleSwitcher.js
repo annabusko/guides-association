@@ -1,18 +1,28 @@
-import React, { Fragment } from 'react';
-import { Radio } from 'semantic-ui-react';
-
+import React from 'react';
 import { useTranslation } from "react-i18next";
 
 const LanguageRadio = () => {
     const { i18n } = useTranslation();
+    const current = (i18n.language?.startsWith('en')) ? 'en' : 'ru';
+
     return (
-        <Fragment>
-            <span>Ru</span>
-            <Radio onChange={() => i18n.language ==="ru" ? i18n.changeLanguage('en') : i18n.changeLanguage('ru') } toggle />
-            <span>En</span>
-        </Fragment>
+        <fieldset className="lang-switcher" aria-label="Language">
+            <button
+                type="button"
+                className={`lang-switcher__btn${current === 'ru' ? ' lang-switcher__btn--active' : ''}`}
+                onClick={() => i18n.changeLanguage('ru')}
+            >
+                Ru
+            </button>
+            <button
+                type="button"
+                className={`lang-switcher__btn${current === 'en' ? ' lang-switcher__btn--active' : ''}`}
+                onClick={() => i18n.changeLanguage('en')}
+            >
+                En
+            </button>
+        </fieldset>
     );
 };
-
 
 export default LanguageRadio;

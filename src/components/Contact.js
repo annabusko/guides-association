@@ -1,135 +1,205 @@
-import React, { Component } from "react";
-import { Form, TextArea, Button, Dimmer, Header, Icon } from 'semantic-ui-react';
+import React, { useState } from "react";
+import {
+  Form,
+  TextArea,
+  Button,
+  Dimmer,
+  Header,
+  Icon,
+} from "semantic-ui-react";
 
 import { useTranslation } from "react-i18next";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faMobileAlt, faEnvelope, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faMobileAlt,
+  faEnvelope,
+  faCalendarAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
-const img_contact_main = require('../assets/images/different/contact.group.jpg');
+const img_contact_main = require("../assets/images/different/contact.group.jpg");
 
-class ContactForm extends Component {
+const requiredMark = (key, t) => (
+  <>
+    {t(key)} <span className="contact-form__req">*</span>
+  </>
+);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            email: '',
-            message: '',
-            showModal: false,
-        }
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+function ContactForm() {
+  const { t } = useTranslation();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
-    handleChange = event => {
-        const target = event.target
-        const value = target.value
-        const name = target.name
-        this.setState({
-            [name]: value,
-        })
+  const handleChange = (_, data = {}) => {
+    const { name: fieldName, value } = data;
+    if (!fieldName) return;
+    if (fieldName === "name") setName(value);
+    if (fieldName === "email") setEmail(value);
+    if (fieldName === "message") setMessage(value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const templateId = "template_cehjwdNW";
+    const service_id = "default_service";
+    const template_params = {
+      from_name: name,
+      reply_to: email,
+      message_html: message,
     };
 
-    handleSubmit = event => {
-        event.preventDefault();
+    window.emailjs
+      .send(service_id, templateId, template_params)
+      .then(handleSuccess)
+      .catch((error) => alert(error));
+  };
 
-        const templateId = 'template_cehjwdNW';
-        const service_id = "default_service";
-        var template_params = {
-            "from_name": this.state.name,
-            "reply_to": this.state.email,
-            "message_html": this.state.message
-        }
+  const handleSuccess = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setShowModal(true);
+  };
 
-        window.emailjs.send(
-            service_id, templateId,
-            template_params
-        ).then(this.handleSuccess)
-            .catch(error => alert(error));
-    }
+  const closeModal = () => setShowModal(false);
 
+  return (
+    <div className="contact-card contact-card--form">
+      <div className="contact-card__head">
+        <Icon name="mail outline" className="contact-card__head-icon" />
+        <h2 className="contact-card__title">{t("contact_write_title")}</h2>
+      </div>
+      <Form className="contact-form" onSubmit={handleSubmit}>
+        <Form.Input
+          label={requiredMark("contact_form_name", t)}
+          placeholder={t("contact_placeholder_name")}
+          name="name"
+          value={name}
+          onChange={handleChange}
+          required
+        />
+        <Form.Input
+          label={
+            <>
+              {t("contact_form_email")}{" "}
+              <span className="contact-form__req">*</span>
+            </>
+          }
+          placeholder={t("contact_placeholder_email")}
+          name="email"
+          required
+          value={email}
+          onChange={handleChange}
+        />
+        <Form.Field
+          control={TextArea}
+          name="message"
+          label={requiredMark("contact_form_message", t)}
+          placeholder={t("contact_placeholder_message")}
+          onChange={handleChange}
+          required
+          value={message}
+        />
+        <Button type="submit" className="contact-button" name="submit">
+          {t("contact_form_send_full")}
+        </Button>
+      </Form>
+      <p className="contact-card__hint">{t("contact_reply_hint")}</p>
 
-    handleSuccess = () => {
-        this.setState({
-            name: '',
-            email: '',
-            message: '',
-            showModal: true,
-        })
-    }
-
-    closeModal = () => {
-        this.setState({ showModal: false })
-    }
-
-    render() {
-        const { name, message, button } = this.props;
-        return (
-            <div>
-                <Form size="huge" className="contact-form" onSubmit={this.handleSubmit}>
-                    <Form.Input
-                        label={name}
-                        placeholder={name}
-                        name='name'
-                        value={this.state.name}
-                        onChange={this.handleChange}
-                        required
-                    />
-                    <Form.Input
-                        label='Email'
-                        placeholder='your_adress@gmail.com'
-                        name='email'
-                        required
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                    />
-                    <Form.Field
-                        control={TextArea}
-                        label={message}
-                        placeholder={message}
-                        onChange={this.handleChange}
-                        required
-                        value={this.state.message}
-                        name="message"
-                    />
-                    <Button type="submit" size='huge' className="contact-button" name="submit" >{button}</Button>
-                </Form>
-
-                <Dimmer active={this.state.showModal} onClickOutside={this.closeModal} page>
-                    <Header as='h2' icon inverted>
-                        <Icon name='heart' />
-                        Your Message Has Been Sent!
-                        <Header.Subheader>Click anywhere to close </Header.Subheader>
-                    </Header>
-                </Dimmer>
-            </div>
-        )
-    }
+      <Dimmer active={showModal} onClickOutside={closeModal} page>
+        <Header as="h2" icon inverted>
+          <Icon name="heart" />
+          Your Message Has Been Sent!
+          <Header.Subheader>Click anywhere to close </Header.Subheader>
+        </Header>
+      </Dimmer>
+    </div>
+  );
 }
 
 const ContactBlock = () => {
-    const { t } = useTranslation();
-    return (<section className="block">
-        <div>
-            <div className="content-main-image"
-                style={{
-                    background: `url(${img_contact_main})`
-                }} >
-                <div><h1>{t('menu_contact')}</h1></div>
-            </div>
-            <div className="block-wrapper contact-wrapper">
-                <ContactForm name={t('contact_form_name')} message={t('contact_form_message')} button={t('contact_form_send')} />
-                <div className="adress-wrapper">
-                    <span><FontAwesomeIcon icon={faMapMarkerAlt} size="3x" /> {t('adress')}</span>
-                    <span><FontAwesomeIcon icon={faMobileAlt} size="3x" /> +375-29-7697529</span>
-                    <span><FontAwesomeIcon icon={faEnvelope} size="3x" /> guidebelarus@yandex.by</span>
-                    <span><FontAwesomeIcon icon={faCalendarAlt} size="3x" /> 9.00-17.00</span>
-                </div>
+  const { t } = useTranslation();
+  return (
+    <section className="block contact-page">
+      <div>
+        <div
+          className="content-main-image"
+          style={{ background: `url(${img_contact_main})` }}
+        >
+            <div>
+              <h1>{t("menu_contact")}</h1>
             </div>
         </div>
+        <div className="block-wrapper contact-wrapper">
+          <ContactForm />
+          <div className="contact-card contact-card--info">
+            <div className="contact-card__head">
+              <Icon name="phone" className="contact-card__head-icon" />
+              <h2 className="contact-card__title">{t("contact_info_title")}</h2>
+            </div>
+            <ul className="contact-info-list">
+              <li className="contact-info-row">
+                <div className="contact-info-row__icon" aria-hidden>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </div>
+                <div className="contact-info-row__body">
+                  <strong className="contact-info-row__label">
+                    {t("contact_label_address")}
+                  </strong>
+                  <span className="contact-info-row__value">{t("adress")}</span>
+                </div>
+              </li>
+              <li className="contact-info-row">
+                <div className="contact-info-row__icon" aria-hidden>
+                  <FontAwesomeIcon icon={faMobileAlt} />
+                </div>
+                <div className="contact-info-row__body">
+                  <strong className="contact-info-row__label">
+                    {t("contact_label_phone")}
+                  </strong>
+                  <span className="contact-info-row__value">
+                    +375-29-7697529
+                  </span>
+                </div>
+              </li>
+              <li className="contact-info-row">
+                <div className="contact-info-row__icon" aria-hidden>
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </div>
+                <div className="contact-info-row__body">
+                  <strong className="contact-info-row__label">
+                    {t("contact_label_email_row")}
+                  </strong>
+                  <span className="contact-info-row__value">
+                    guidebelarus@yandex.by
+                  </span>
+                </div>
+              </li>
+              <li className="contact-info-row">
+                <div className="contact-info-row__icon" aria-hidden>
+                  <FontAwesomeIcon icon={faCalendarAlt} />
+                </div>
+                <div className="contact-info-row__body">
+                  <strong className="contact-info-row__label">
+                    {t("contact_label_hours")}
+                  </strong>
+                  <span className="contact-info-row__value">
+                    {t("contact_hours_time")}
+                    <br />
+                    {t("contact_hours_days")}
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    )
+  );
 };
 
 export default ContactBlock;
