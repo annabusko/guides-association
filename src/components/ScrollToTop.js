@@ -8,30 +8,27 @@ export default class ScrollToTop extends Component {
     this.state = {
       is_visible: false
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
-    let scrollComponent = this;
-    document.addEventListener("scroll", function (e) {
-      scrollComponent.toggleVisibility();
-    });
+    document.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    let scrollComponent = this;
-    document.removeEventListener("scroll", function (e) {
-      scrollComponent.toggleVisibility();
-    });
+    document.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll() {
+    this.toggleVisibility();
   }
 
   toggleVisibility() {
-    if (window.pageYOffset > 300) {
+    const nextVisible = window.pageYOffset > 300;
+
+    if (nextVisible !== this.state.is_visible) {
       this.setState({
-        is_visible: true
-      });
-    } else {
-      this.setState({
-        is_visible: false
+        is_visible: nextVisible
       });
     }
   }
