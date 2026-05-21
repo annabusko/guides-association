@@ -2,7 +2,7 @@
   background: #f8f9fa;
 }
 
-.contact-page .block-wrapper.contact-wrapper {
+.contact-page .contact-wrapper {
   max-width: 1180px;
   margin: 0 auto;
   padding: 48px 24px 72px;
@@ -18,6 +18,16 @@
   @include for-phone {
     flex-direction: column;
     gap: 24px;
+  }
+}
+
+.contact-wrapper--single .contact-card {
+  flex: 0 1 760px;
+  width: 100%;
+  max-width: 760px;
+
+  @include for-phone {
+    max-width: none;
   }
 }
 
@@ -64,7 +74,7 @@
   }
 
   &__hint {
-    margin: 20px 0 0;
+    margin: 0 0 18px;
 
     @include font($size: 1.5rem, $family: $fontRoboto, $weight: 400);
 
@@ -73,76 +83,16 @@
   }
 }
 
-.contact-form__req {
-  color: #dc3545;
-  font-weight: 600;
-  margin-left: 2px;
-}
-
 .contact-card--form {
-  .contact-form.ui.form .field {
-    margin-bottom: 1.4rem !important;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .contact-form.ui.form .field > label {
-    margin-bottom: 10px !important;
+  .contact-info-row {
+    padding: 12px 0;
 
-    @include font($size: 1.3rem, $family: $fontRoboto, $weight: 600);
-
-    color: #212529 !important;
-  }
-
-  .ui.input > input,
-  textarea {
-    @include font($size: 1.3rem, $family: $fontRoboto, $weight: 400);
-
-    color: #212529 !important;
-    border: 1px solid #dfe3e6 !important;
-    border-radius: 12px !important;
-    padding: 15px 18px !important;
-    box-shadow: none !important;
-
-    transition:
-      border-color 0.15s ease,
-      box-shadow 0.15s ease;
-  }
-
-  .ui.input > input {
-    min-height: 54px !important;
-  }
-
-  textarea {
-    min-height: 120px !important;
-    resize: vertical;
-  }
-
-  .ui.input > input::placeholder,
-  textarea::placeholder {
-    color: #adb5bd !important;
-    opacity: 1 !important;
-  }
-
-  .ui.input > input:focus,
-  textarea:focus {
-    border-color: #adb5bd !important;
-    box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.06) !important;
-  }
-
-  .contact-button.ui.button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 16px 22px;
-
-    @include font($size: 1.25rem, $family: $fontRoboto, $weight: 700);
-
-    color: #ffffff !important;
-    background: #212529 !important;
-    border: none !important;
-    border-radius: 12px !important;
-
-    &:hover {
-      background: #343a40 !important;
-      color: #ffffff !important;
+    &:first-child {
+      padding-top: 0;
     }
   }
 }
@@ -208,5 +158,13 @@
     line-height: 1.55;
     color: #343a40;
     word-break: break-word;
+
+    &[href] {
+      text-decoration: none;
+
+      &:hover {
+        color: #212529;
+      }
+    }
   }
 }
