@@ -28,13 +28,25 @@ class SimpleSlider extends Component {
         <Slider {...settings}>
           {images ? (
             images.map((val, i) => (
-              <div key={i}>
-                <div
-                  className="carrousel_image"
-                  style={{
-                    background: `url(${val.url})`,
-                  }}
-                />
+              <div key={val.url || i}>
+                <div className="carrousel_image">
+                  <img
+                    src={val.url}
+                    alt={val.alt || ""}
+                    className="carrousel_image_img"
+                    loading={i === settings.initialSlide ? "eager" : "lazy"}
+                    fetchPriority={i === settings.initialSlide ? "high" : "auto"}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      maxWidth: "none",
+                      margin: 0,
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      display: "block",
+                    }}
+                  />
+                </div>
               </div>
             ))
           ) : (
