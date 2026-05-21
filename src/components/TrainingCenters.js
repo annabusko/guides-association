@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { Icon, Image } from 'semantic-ui-react';
 
-const img_about_main = require('../assets/images/different/training.group.jpg');
-const imgLogo1 = require('../assets/images/different/logoTraining1.png');
-const imgLogo2 = require('../assets/images/different/logoTraining2.png');
+const img_about_main = require('../assets/images/different/training.group.webp');
+const imgLogo1 = require('../assets/images/different/logoTraining1.webp');
+const imgLogo2 = require('../assets/images/different/logoTraining2.webp');
 
 const CENTER_LINKS = {
     1: 'https://www.belarustourism.by/uslugi/obuchenie/',

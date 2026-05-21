@@ -8,21 +8,21 @@ import statement_doc from "../assets/documents/statement.doc";
 import statement_pdf from "../assets/documents/statement.pdf";
 
 const img_about_main = {
-    url: require('../assets/images/different/about.group.jpg')
+    url: require('../assets/images/different/about.group.webp')
 };
 
 const img_hystory_small = {
-    src: require('../assets/images/different/history.jpg'),
+    src: require('../assets/images/different/history.webp'),
     alt: "карта Великого княжества Литовского 1613-1630 Николая Криштофа Радзивилла (Сиротка)."
 };
 
 const img_rules_small = {
-    src: require('../assets/images/different/rules.jpg'),
+    src: require('../assets/images/different/rules.webp'),
     alt: "устав"
 };
 
 const img_join_small = {
-    src: require('../assets/images/different/join.jpg'),
+    src: require('../assets/images/different/join.webp'),
     alt: "устав"
 };
 

@@ -33,7 +33,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "style": "sass --watch src/assets/sass/index.scss src/index.css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +52,8 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.32.13"
+    "glob": "^7.2.3",
+    "sass": "^1.32.13",
+    "sharp": "^0.32.6"
   }
 }

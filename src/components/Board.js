@@ -3,7 +3,7 @@ import { Tab, Menu, Card, Image } from 'semantic-ui-react';
 
 import { useTranslation } from "react-i18next";
 
-const img_about_main = require('../assets/images/different/about.group.jpg');
+const img_about_main = require('../assets/images/different/about.group.webp');
 
 const MenuTitle = ({ title }) => {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ const CardText = ({ text }) => {
 };
 
 const boss = {
-  src: require('../assets/images/board/boss.jpg'),
+  src: require('../assets/images/board/boss.webp'),
   name: (<CardTitle name='about_team_boss' />),
   text: (<CardText text='about_team_boss_text' />),
   phone: '+375297697529',
@@ -30,7 +30,7 @@ const boss = {
 };
 
 const secretary = {
-  src: require('../assets/images/board/secretary.jpg'),
+  src: require('../assets/images/board/secretary.webp'),
   name: (<CardTitle name='about_team_secretary' />),
   text: (<CardText text='about_team_secretary_text' />),
   phone: '+375298632150',
@@ -40,7 +40,7 @@ const secretary = {
 
 const crue = [
   {
-    src: require('../assets/images/board/crue1.jpg'),
+    src: require('../assets/images/board/crue1.webp'),
     name: (<CardTitle name='about_team_crue1' />),
     text: (<CardText text='about_team_crue1_text' />),
     meta: (<CardText text='about_team_crue1_post' />),
@@ -48,7 +48,7 @@ const crue = [
     color: 'orange'
   },
   {
-    src: require('../assets/images/board/crue2.jpg'),
+    src: require('../assets/images/board/crue2.webp'),
     name: (<CardTitle name='about_team_crue2' />),
     text: (<CardText text='about_team_crue2_text' />),
     meta: (<CardText text='about_team_crue2_post' />),
@@ -56,42 +56,42 @@ const crue = [
     color: 'orange'
   },
   {
-    src: require('../assets/images/board/crue4.jpg'),
+    src: require('../assets/images/board/crue4.webp'),
     name: (<CardTitle name='about_team_crue4' />),
     text: (<CardText text='about_team_crue4_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/crue6.jpg'),
+    src: require('../assets/images/board/crue6.webp'),
     name: (<CardTitle name='about_team_crue6' />),
     text: (<CardText text='about_team_crue6_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/crue3.jpg'),
+    src: require('../assets/images/board/crue3.webp'),
     name: (<CardTitle name='about_team_crue3' />),
     text: (<CardText text='about_team_crue3_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/crue5.jpg'),
+    src: require('../assets/images/board/crue5.webp'),
     name: (<CardTitle name='about_team_crue5' />),
     text: (<CardText text='about_team_crue5_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/crue7.jpg'),
+    src: require('../assets/images/board/crue7.webp'),
     name: (<CardTitle name='about_team_crue7' />),
     text: (<CardText text='about_team_crue7_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/boss.jpg'),
+    src: require('../assets/images/board/boss.webp'),
     name: (<CardTitle name='about_team_boss' />),
     text: (<CardText text='about_team_boss_text_short' />),
     classTitle: 'board-card board-group',
@@ -102,7 +102,7 @@ const crue = [
 
 const comission = [
   {
-    src: require('../assets/images/board/comission1.jpg'),
+    src: require('../assets/images/board/comission1.webp'),
     name: (<CardTitle name='about_team_comission1' />),
     text: (<CardText text='about_team_comission1_text' />),
     meta: (<CardText text='about_team_comission1_post' />),
@@ -110,14 +110,14 @@ const comission = [
     color: 'orange'
   },
   {
-    src: require('../assets/images/board/comission2.jpg'),
+    src: require('../assets/images/board/comission2.webp'),
     name: (<CardTitle name='about_team_comission2' />),
     text: (<CardText text='about_team_comission2_text' />),
     classTitle: 'board-card board-group',
     color: 'grey'
   },
   {
-    src: require('../assets/images/board/comission3.jpg'),
+    src: require('../assets/images/board/comission3.webp'),
     name: (<CardTitle name='about_team_comission3' />),
     text: (<CardText text='about_team_comission3_text' />),
     classTitle: 'board-card board-group',
@@ -129,7 +129,7 @@ const comission = [
 const BoardCard = ({ data }) => (
   <Card centered color={data.color} className={data.classTitle}>
 
-    <Image src={data.src} wrapped ui={false} alt="" />
+    <Image src={data.src} wrapped ui={false} alt="" loading="lazy" />
     <Card.Content>
       <Card.Header>{data.name}</Card.Header>
       {!data.meta ? null : <Card.Meta>

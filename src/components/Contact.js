@@ -18,7 +18,7 @@ import {
   faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-const img_contact_main = require("../assets/images/different/contact.group.jpg");
+const img_contact_main = require("../assets/images/different/contact.group.webp");
 
 const requiredMark = (key, t) => (
   <>

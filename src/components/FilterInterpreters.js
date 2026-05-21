@@ -8,18 +8,18 @@ import { bindActionCreators } from 'redux';
 import * as filterActions from '../assets/store/actions/filter';
 
 const languagesLarge = [
-  { key: 'ja', text: 'Японский / Japanese', value: 'japanese', image: { avatar: true, src: require('../assets/images/flags/ja-Japanese.png') }, },
-  { key: 'en', text: 'Английский / English', value: 'english', image: { avatar: true, src: require('../assets/images/flags/en-English.png') }, },
-  { key: 'pr', text: 'Персидский / Persian', value: 'persian', image: { avatar: true, src: require('../assets/images/flags/ir-Iran.png') }, },
-  { key: 'pl', text: 'Польский / Polish', value: 'polish', image: { avatar: true, src: require('../assets/images/flags/pl-Polish.png') }, },
-  { key: 'tk', text: 'Турецкий / Turkish', value: 'turkish', image: { avatar: true, src: require('../assets/images/flags/tk-Turkish.png') }, },
-  { key: 'de', text: 'Немецкий / German', value: 'german', image: { avatar: true, src: require('../assets/images/flags/de-German.png') }, },
-  { key: 'ar', text: 'Арабский / Arabic', value: 'arabic', image: { avatar: true, src: require('../assets/images/flags/ar-Arabic.png') }, },
-  { key: 'he', text: 'Иврит / Hebrew', value: 'hebrew', image: { avatar: true, src: require('../assets/images/flags/he-hebrew.png') }, },
-  { key: 'es', text: 'Испанский / Spanish', value: 'spanish', image: { avatar: true, src: require('../assets/images/flags/es-Spanish.png') }, },
-  { key: 'fr', text: 'Французский / French', value: 'french', image: { avatar: true, src: require('../assets/images/flags/fr-French.png') }, },
-  { key: 'ch', text: 'Китайский / Chinese', value: 'chinese', image: { avatar: true, src: require('../assets/images/flags/ch-Chinese.png') }, },
-  { key: 'it', text: 'Итальянский / Italian', value: 'italian', image: { avatar: true, src: require('../assets/images/flags/it-Italian.png') }, },
+  { key: 'ja', text: 'Японский / Japanese', value: 'japanese', image: { avatar: true, src: require('../assets/images/flags/ja-Japanese.webp') }, },
+  { key: 'en', text: 'Английский / English', value: 'english', image: { avatar: true, src: require('../assets/images/flags/en-English.webp') }, },
+  { key: 'pr', text: 'Персидский / Persian', value: 'persian', image: { avatar: true, src: require('../assets/images/flags/ir-Iran.webp') }, },
+  { key: 'pl', text: 'Польский / Polish', value: 'polish', image: { avatar: true, src: require('../assets/images/flags/pl-Polish.webp') }, },
+  { key: 'tk', text: 'Турецкий / Turkish', value: 'turkish', image: { avatar: true, src: require('../assets/images/flags/tk-Turkish.webp') }, },
+  { key: 'de', text: 'Немецкий / German', value: 'german', image: { avatar: true, src: require('../assets/images/flags/de-German.webp') }, },
+  { key: 'ar', text: 'Арабский / Arabic', value: 'arabic', image: { avatar: true, src: require('../assets/images/flags/ar-Arabic.webp') }, },
+  { key: 'he', text: 'Иврит / Hebrew', value: 'hebrew', image: { avatar: true, src: require('../assets/images/flags/he-hebrew.webp') }, },
+  { key: 'es', text: 'Испанский / Spanish', value: 'spanish', image: { avatar: true, src: require('../assets/images/flags/es-Spanish.webp') }, },
+  { key: 'fr', text: 'Французский / French', value: 'french', image: { avatar: true, src: require('../assets/images/flags/fr-French.webp') }, },
+  { key: 'ch', text: 'Китайский / Chinese', value: 'chinese', image: { avatar: true, src: require('../assets/images/flags/ch-Chinese.webp') }, },
+  { key: 'it', text: 'Итальянский / Italian', value: 'italian', image: { avatar: true, src: require('../assets/images/flags/it-Italian.webp') }, },
 ]
 
 const citiesSmall = [
@@ -28,8 +28,8 @@ const citiesSmall = [
 ]
 
 const languagesSmall =  [
-  { key: 'ru', text: 'Русский / Russian', value: 'russian', image: { avatar: true, src: require('../assets/images/flags/ru-Russian.png') }, },
-  { key: 'by', text: 'Белорусский / Belarusian', value: 'belarusian', image: { avatar: true, src: require('../assets/images/flags/by-Belarusian.png') }, },
+  { key: 'ru', text: 'Русский / Russian', value: 'russian', image: { avatar: true, src: require('../assets/images/flags/ru-Russian.webp') }, },
+  { key: 'by', text: 'Белорусский / Belarusian', value: 'belarusian', image: { avatar: true, src: require('../assets/images/flags/by-Belarusian.webp') }, },
 ]
 
 const citiesLarge = [

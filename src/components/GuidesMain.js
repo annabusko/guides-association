@@ -3,11 +3,11 @@ import AboutBlock from './About';
 import { useTranslation } from "react-i18next";
 
 const img_guides_main = {
-    url: require('../assets/images/different/about.group.jpg')
+    url: require('../assets/images/different/about.group.webp')
 };
 
 const img_guides_small = {
-    src: require('../assets/images/different/guides_small.jpg'),
+    src: require('../assets/images/different/guides_small.webp'),
     alt: "Белорусское общество экскурсоводов и гидов-переводчиков"
 };
 
