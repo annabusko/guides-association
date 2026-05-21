@@ -91,21 +91,15 @@ const JoinBlock = () => {
                 <p>{t('about_join3')}</p>
                 <p>{t('about_join4')}</p>
             </AboutBlock>
-            <div className="button-group">
-                <Button.Group size='massive' >
-                    <Button animated='fade' size='massive' as='a'
-                        href={statement_doc}>
-                        <Button.Content visible>{t('application_title')}(.doc)</Button.Content>
-                        <Button.Content hidden> <Icon name='down arrow' />{t('application_download')}</Button.Content>
-                    </Button>
-                    <Button.Or />
-                    <Button animated='fade' size='massive' as='a'
-                        href={statement_pdf}
-                        target="_blank">
-                        <Button.Content visible>{t('application_title')}(.pdf)</Button.Content>
-                        <Button.Content hidden> <Icon name='down arrow' />{t('application_download')}</Button.Content>
-                    </Button>
-                </Button.Group>
+            <div className="application-buttons">
+                <Button animated='fade' as='a' href={statement_doc}>
+                    <Button.Content visible>{t('application_title')}(.doc)</Button.Content>
+                    <Button.Content hidden><Icon name='down arrow' />{t('application_download')}</Button.Content>
+                </Button>
+                <Button animated='fade' as='a' href={statement_pdf} target="_blank">
+                    <Button.Content visible>{t('application_title')}(.pdf)</Button.Content>
+                    <Button.Content hidden><Icon name='down arrow' />{t('application_download')}</Button.Content>
+                </Button>
             </div>
         </Fragment>
     )

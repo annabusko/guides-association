@@ -105,55 +105,69 @@
     }
 }
 
-.button-group {
+.application-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    margin-bottom: 72px;
 
-    .ui.vertical.buttons {
-        gap: 8px;
-        background: transparent;
-    }
+    .ui.button {
+        min-width: 260px;
+        min-height: 56px;
 
-    .ui.vertical.buttons .button {
-        width: 320px;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
 
-        margin: 0 !important;
-        padding: 14px 18px !important;
+        padding: 14px 24px !important;
 
+        font-family: $fontRoboto, sans-serif !important;
+        font-size: 1.25rem !important;
+        font-weight: 600 !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+
+        color: #2d2d2d !important;
         background: #ffffff !important;
-        color: #212529 !important;
 
-        border: 1px solid rgba(0, 0, 0, 0.06) !important;
-        border-radius: 12px !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        border-radius: 14px !important;
 
-        box-shadow: none !important;
-
-        font-family: $fontManrope !important;
-        font-size: 1.15rem !important;
-        font-weight: 700 !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035) !important;
 
         transition:
-            background 0.2s ease,
-            transform 0.15s ease,
-            box-shadow 0.2s ease;
+            background 0.18s ease,
+            border-color 0.18s ease,
+            transform 0.18s ease;
     }
 
-    .ui.vertical.buttons .button:hover {
-        background: #dfe3e6 !important;
+    .ui.button:hover {
+        background: #f8f9fa !important;
+        border-color: rgba(0, 0, 0, 0.12) !important;
         transform: translateY(-1px);
-
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
     }
 
-    .ui.vertical.buttons .button .hidden.content {
-        color: #212529 !important;
+    .ui.button .visible.content,
+    .ui.button .hidden.content {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px;
+        width: 100%;
+        color: #2d2d2d !important;
     }
 
     @include for-phone {
-        .ui.vertical.buttons,
-        .ui.vertical.buttons .button {
+        flex-direction: column;
+        align-items: center;
+
+        .ui.button {
             width: 100%;
+            max-width: 420px;
+            min-width: unset;
         }
     }
 }
