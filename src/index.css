@@ -1798,6 +1798,58 @@ h4 {
   }
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 56px;
+}
+.button-group .ui.vertical.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.button-group .ui.vertical.buttons .button {
+  width: 320px;
+  margin: 0 !important;
+  padding: 14px 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  color: #343a40 !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035) !important;
+  font-family: "Roboto", "Verdana", sans-serif, sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+.button-group .ui.vertical.buttons .button:hover {
+  background: #f8f9fa !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+  transform: translateY(-1px);
+}
+.button-group .visible.content,
+.button-group .hidden.content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100%;
+  color: #343a40 !important;
+}
+@media (max-width: 767px) {
+  .button-group .ui.vertical.buttons .button {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
 .content-text {
   padding: 0px 20px;
   text-align: justify;
