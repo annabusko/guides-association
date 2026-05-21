@@ -9,6 +9,7 @@ import {
 } from "semantic-ui-react";
 
 import { useTranslation } from "react-i18next";
+import emailjs from "emailjs-com";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,6 +20,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const img_contact_main = require("../assets/images/different/contact.group.webp");
+
+emailjs.init("user_58WKPTHxUXCSbI7Wc5ddK");
 
 const requiredMark = (key, t) => (
   <>
@@ -52,7 +55,7 @@ function ContactForm() {
       message_html: message,
     };
 
-    window.emailjs
+    emailjs
       .send(service_id, templateId, template_params)
       .then(handleSuccess)
       .catch((error) => alert(error));
