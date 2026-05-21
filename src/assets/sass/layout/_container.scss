@@ -90,11 +90,12 @@
 
 .content-wrapper-guides {
 
-    padding: 20px 0px;
+    padding: 20px 24px;
     line-height: 2;
     @include font($size: 1.6rem, $family: $fontRoboto, $weight: 400);
 
     @include for-phone {
+        padding: 16px 16px;
         @include font($size: 1.4rem, $family: $fontRoboto, $weight: 400);
     }
 
