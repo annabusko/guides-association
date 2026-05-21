@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import appeal from "../assets/documents/appeal.pdf";
-const img_news_main = require('../assets/images/different/news.jpg');
+const img_news_main = require('../assets/images/different/news.webp');
 
 const NewsBlock = () => {
     const { t } = useTranslation();

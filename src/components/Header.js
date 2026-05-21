@@ -13,8 +13,9 @@ class HeaderDividing extends Component {
   constructor() {
     super();
     this.state = {
-      isPositionVertical: (window.innerWidth <= 767) ? true : false
+      isPositionVertical: window.innerWidth <= 767
     };
+    this.resizeRaf = null;
     this.updateMenuType = this.updateMenuType.bind(this);
 
   }
@@ -22,12 +23,28 @@ class HeaderDividing extends Component {
     window.addEventListener("resize", this.updateMenuType);
   }
   updateMenuType() {
-    this.setState({
-      isPositionVertical: (window.innerWidth <= 767) ? true : false
+    if (this.resizeRaf) {
+      return;
+    }
+
+    this.resizeRaf = window.requestAnimationFrame(() => {
+      const nextIsVertical = window.innerWidth <= 767;
+
+      if (nextIsVertical !== this.state.isPositionVertical) {
+        this.setState({
+          isPositionVertical: nextIsVertical
+        });
+      }
+
+      this.resizeRaf = null;
     });
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateMenuType);
+    if (this.resizeRaf) {
+      window.cancelAnimationFrame(this.resizeRaf);
+      this.resizeRaf = null;
+    }
   }
   render() {
     const isPositionVertical = this.state.isPositionVertical;

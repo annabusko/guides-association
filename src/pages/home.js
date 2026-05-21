@@ -7,25 +7,25 @@ import ReasonsBlock from '../components/Reasons';
 
 const img_set = [ 
      {
-        url: require('../assets/images/slider/2.jpg'),
+        url: require('../assets/images/slider/2.webp'),
     },  
     {
-        url: require('../assets/images/slider/3.jpg'),
+        url: require('../assets/images/slider/3.webp'),
     },
     {
-        url: require('../assets/images/slider/4.jpg'),
+        url: require('../assets/images/slider/4.webp'),
     },
     {
-        url: require('../assets/images/slider/5.jpg'),
+        url: require('../assets/images/slider/5.webp'),
     },
     {
-        url: require('../assets/images/slider/6.jpg'),
+        url: require('../assets/images/slider/6.webp'),
     },
     {
-        url: require('../assets/images/slider/7.jpg'),
+        url: require('../assets/images/slider/7.webp'),
     },
     {
-        url: require('../assets/images/slider/8.jpg'),
+        url: require('../assets/images/slider/8.webp'),
     },
 ];
 

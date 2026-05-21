@@ -4,6 +4,7 @@
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
   src: local(""), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.woff2") format("woff2"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.woff") format("woff"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.ttf") format("truetype"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.svg#Comfortaa") format("svg");
@@ -14,6 +15,7 @@
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
   src: local(""), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.woff2") format("woff2"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.woff") format("woff"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.ttf") format("truetype"), url("../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.svg#Comfortaa") format("svg");
@@ -24,6 +26,7 @@
   font-family: "Montserrat Alternates";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local("Montserrat Alternates Regular"), local("MontserratAlternates-Regular"), url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.woff2") format("woff2"), url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.woff") format("woff"), url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.ttf") format("truetype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-regular.svg#MontserratAlternates") format("svg");
@@ -34,6 +37,7 @@
   font-family: "Montserrat Alternates";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../src/assets/fonts/montserrat-alternates-v11-latin-700.eot");
   /* IE9 Compat Modes */
   src: local("Montserrat Alternates Bold"), local("MontserratAlternates-Bold"), url("../src/assets/fonts/montserrat-alternates-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-700.woff2") format("woff2"), url("../src/assets/fonts/montserrat-alternates-v11-latin-700.woff") format("woff"), url("../src/assets/fonts/montserrat-alternates-v11-latin-700.ttf") format("truetype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-700.svg#MontserratAlternates") format("svg");
@@ -44,6 +48,7 @@
   font-family: "Montserrat Alternates";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url("../src/assets/fonts/montserrat-alternates-v11-latin-900.eot");
   /* IE9 Compat Modes */
   src: local("Montserrat Alternates Black"), local("MontserratAlternates-Black"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.woff2") format("woff2"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.woff") format("woff"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.ttf") format("truetype"), url("../src/assets/fonts/montserrat-alternates-v11-latin-900.svg#MontserratAlternates") format("svg");
@@ -54,6 +59,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
   src: local("Roboto"), local("Roboto-Regular"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../src/assets/fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
@@ -64,6 +70,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../src/assets/fonts/Manrope-Regular.ttf") format("truetype");
 }
 /* manrope-medium */
@@ -71,6 +78,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url("../src/assets/fonts/Manrope-Medium.ttf") format("truetype");
 }
 /* manrope-semibold */
@@ -78,6 +86,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url("../src/assets/fonts/Manrope-SemiBold.ttf") format("truetype");
 }
 /* manrope-bold */
@@ -85,6 +94,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../src/assets/fonts/Manrope-Bold.ttf") format("truetype");
 }
 .header-wrapper {
@@ -841,6 +851,7 @@ h4 {
   font-family: "slick";
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
   src: url("../src/assets/fonts/slick.eot");
   src: url("../src/assets/fonts/slick.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/slick.woff") format("woff"), url("../src/assets/fonts/slick.ttf") format("truetype"), url("../src/assets/fonts/slick.svg#slick") format("svg");
 }
@@ -1798,6 +1809,58 @@ h4 {
   }
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 56px;
+}
+.button-group .ui.vertical.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.button-group .ui.vertical.buttons .button {
+  width: 320px;
+  margin: 0 !important;
+  padding: 14px 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  color: #343a40 !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035) !important;
+  font-family: "Roboto", "Verdana", sans-serif, sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+.button-group .ui.vertical.buttons .button:hover {
+  background: #f8f9fa !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+  transform: translateY(-1px);
+}
+.button-group .visible.content,
+.button-group .hidden.content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100%;
+  color: #343a40 !important;
+}
+@media (max-width: 767px) {
+  .button-group .ui.vertical.buttons .button {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
 .content-text {
   padding: 0px 20px;
   text-align: justify;
@@ -1945,7 +2008,7 @@ h4 {
   background: #f8f9fa;
 }
 
-.contact-page .block-wrapper.contact-wrapper {
+.contact-page .contact-wrapper {
   max-width: 1180px;
   margin: 0 auto;
   padding: 48px 24px 72px;
@@ -1962,6 +2025,17 @@ h4 {
   .contact-wrapper {
     flex-direction: column;
     gap: 24px;
+  }
+}
+
+.contact-wrapper--single .contact-card {
+  flex: 0 1 760px;
+  width: 100%;
+  max-width: 760px;
+}
+@media (max-width: 767px) {
+  .contact-wrapper--single .contact-card {
+    max-width: none;
   }
 }
 
@@ -2002,7 +2076,7 @@ h4 {
   line-height: 1.25;
 }
 .contact-card__hint {
-  margin: 20px 0 0;
+  margin: 0 0 18px;
   font-size: 1.5rem;
   font-family: "Roboto", "Verdana", sans-serif;
   font-weight: 400;
@@ -2011,69 +2085,16 @@ h4 {
   line-height: 1.5;
 }
 
-.contact-form__req {
-  color: #dc3545;
-  font-weight: 600;
-  margin-left: 2px;
+.contact-card--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.contact-card--form .contact-form.ui.form .field {
-  margin-bottom: 1.4rem !important;
+.contact-card--form .contact-info-row {
+  padding: 12px 0;
 }
-.contact-card--form .contact-form.ui.form .field > label {
-  margin-bottom: 10px !important;
-  font-size: 1.3rem;
-  font-family: "Roboto", "Verdana", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: #212529 !important;
-}
-.contact-card--form .ui.input > input,
-.contact-card--form textarea {
-  font-size: 1.3rem;
-  font-family: "Roboto", "Verdana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #212529 !important;
-  border: 1px solid #dfe3e6 !important;
-  border-radius: 12px !important;
-  padding: 15px 18px !important;
-  box-shadow: none !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-.contact-card--form .ui.input > input {
-  min-height: 54px !important;
-}
-.contact-card--form textarea {
-  min-height: 120px !important;
-  resize: vertical;
-}
-.contact-card--form .ui.input > input::placeholder,
-.contact-card--form textarea::placeholder {
-  color: #adb5bd !important;
-  opacity: 1 !important;
-}
-.contact-card--form .ui.input > input:focus,
-.contact-card--form textarea:focus {
-  border-color: #adb5bd !important;
-  box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.06) !important;
-}
-.contact-card--form .contact-button.ui.button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 16px 22px;
-  font-size: 1.25rem;
-  font-family: "Roboto", "Verdana", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #ffffff !important;
-  background: #212529 !important;
-  border: none !important;
-  border-radius: 12px !important;
-}
-.contact-card--form .contact-button.ui.button:hover {
-  background: #343a40 !important;
-  color: #ffffff !important;
+.contact-card--form .contact-info-row:first-child {
+  padding-top: 0;
 }
 
 .contact-info-list {
@@ -2130,6 +2151,12 @@ h4 {
   line-height: 1.55;
   color: #343a40;
   word-break: break-word;
+}
+.contact-info-row__value[href] {
+  text-decoration: none;
+}
+.contact-info-row__value[href]:hover {
+  color: #212529;
 }
 
 .content-wrapper-trainings {

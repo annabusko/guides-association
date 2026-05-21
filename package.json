@@ -11,7 +11,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
-    "emailjs-com": "^2.6.3",
     "i18next": "^19.4.5",
     "i18next-browser-languagedetector": "^4.2.0",
     "lodash": "^4.17.20",
@@ -33,7 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "style": "sass --watch src/assets/sass/index.scss src/index.css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +51,8 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.32.13"
+    "glob": "^7.2.3",
+    "sass": "^1.32.13",
+    "sharp": "^0.32.6"
   }
 }

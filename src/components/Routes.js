@@ -1,10 +1,10 @@
 import React from 'react';
 import { Segment } from 'semantic-ui-react';
 
-import architecture from '../assets/images/buttons/architecture.jpg';
-import religy from '../assets/images/buttons/religy.jpg';
-import nature from '../assets/images/buttons/nature.jpg';
-import industry from '../assets/images/buttons/industry.jpg';
+import architecture from '../assets/images/buttons/architecture.webp';
+import religy from '../assets/images/buttons/religy.webp';
+import nature from '../assets/images/buttons/nature.webp';
+import industry from '../assets/images/buttons/industry.webp';
 
 import { useTranslation } from "react-i18next";
 

@@ -10,11 +10,11 @@ import act3 from "../assets/documents/2024.pdf";
 import note from "../assets/documents/note.pdf";
 
 const img_training_main = {
-  url: require("../assets/images/different/training.group.jpg"),
+  url: require("../assets/images/different/training.group.webp"),
 };
 
 const img_exam_small = {
-  src: require("../assets/images/different/exam.jpg"),
+  src: require("../assets/images/different/exam.webp"),
   alt: "",
 };
 

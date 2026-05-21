@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class SimpleSlider extends Component {
-
   render() {
     const { images } = this.props;
 
@@ -18,27 +17,36 @@ class SimpleSlider extends Component {
       initialSlide: 4,
       autoplay: true,
       pauseOnHover: true,
-      autoplaySpeed: 6000
+      autoplaySpeed: 6000,
+      accessibility: false,
+
+      focusOnChange: false,
     };
 
     return (
       <div className="carrousel_wrapper">
         <Slider {...settings}>
-          {images ? images.map((val, i) => (
-            <div key={i}>
-              <div
-                className="carrousel_image"
-                style={{
-                  background: `url(${val.url})`
-                }} />
-            </div>)) : <span>"Loading..."</span>}
+          {images ? (
+            images.map((val, i) => (
+              <div key={i}>
+                <div
+                  className="carrousel_image"
+                  style={{
+                    background: `url(${val.url})`,
+                  }}
+                />
+              </div>
+            ))
+          ) : (
+            <span>"Loading..."</span>
+          )}
         </Slider>
-      </div >
+      </div>
     );
   }
 }
 
-SimpleSlider.displayName = 'SimpleSlider';
+SimpleSlider.displayName = "SimpleSlider";
 SimpleSlider.propTypes = {
   images: PropTypes.array,
 };
