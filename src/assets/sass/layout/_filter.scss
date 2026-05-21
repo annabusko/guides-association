@@ -1,11 +1,74 @@
 .filter-container {
-    text-align: right;
-    margin: 20px 0;
-    display: flex;
-    @include for-phone {
-        flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    gap: 16px;
+
+    margin: 24px 0 32px;
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.035),
+        0 12px 24px rgba(92, 58, 28, 0.035);
+
+    @include for-tablet {
+        grid-template-columns: 1fr 1fr;
     }
-    span {
-        @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 400);
+
+    @include for-phone {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .ui.dropdown {
+        min-height: 52px;
+        border-radius: 14px !important;
+
+        background: #fafafa !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+
+        font-family: $fontRoboto, sans-serif !important;
+        font-size: 1.12rem !important;
+        color: #343a40 !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        &.active,
+        &.visible {
+            border-color: rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .menu {
+            border-radius: 14px !important;
+            border: 1px solid rgba(0, 0, 0, 0.08) !important;
+            box-shadow:
+                0 4px 14px rgba(0, 0, 0, 0.07),
+                0 12px 24px rgba(0, 0, 0, 0.04) !important;
+        }
+    }
+
+    .ui.input {
+        width: 100%;
+
+        > input {
+            width: 100%;
+            min-height: 52px;
+            border-radius: 14px !important;
+
+            background: #fafafa !important;
+            border: 1px solid rgba(0, 0, 0, 0.08) !important;
+
+            font-family: $fontRoboto, sans-serif !important;
+            font-size: 1.12rem !important;
+            color: #343a40 !important;
+
+            &:focus {
+                border-color: rgba(0, 0, 0, 0.18) !important;
+            }
+        }
     }
 }

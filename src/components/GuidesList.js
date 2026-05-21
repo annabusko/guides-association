@@ -20,7 +20,7 @@ const MenuTitle = ({ title, tg }) => {
 const GuideCard = (guide) => {
   const { name, email, phone, lang, city, img } = guide;
   return (
-    <Card className="guides-search" color='red'>
+    <Card className="guides-search">
       <Card.Content>
         <Image
           floated='left'
