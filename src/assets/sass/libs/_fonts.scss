@@ -3,6 +3,7 @@
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../src/assets/fonts/comfortaa-v28-latin_cyrillic-regular.eot');
   /* IE9 Compat Modes */
   src: local(''),
@@ -23,6 +24,7 @@
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../src/assets/fonts/comfortaa-v28-latin_cyrillic-700.eot');
   /* IE9 Compat Modes */
   src: local(''),
@@ -43,6 +45,7 @@
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../src/assets/fonts/montserrat-alternates-v11-latin-regular.eot');
   /* IE9 Compat Modes */
   src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'),
@@ -63,6 +66,7 @@
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../src/assets/fonts/montserrat-alternates-v11-latin-700.eot');
   /* IE9 Compat Modes */
   src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'),
@@ -83,6 +87,7 @@
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url('../src/assets/fonts/montserrat-alternates-v11-latin-900.eot');
   /* IE9 Compat Modes */
   src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'),
@@ -103,6 +108,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../src/assets/fonts/roboto-v20-latin_cyrillic-regular.eot');
   /* IE9 Compat Modes */
   src: local('Roboto'), local('Roboto-Regular'),
@@ -123,6 +129,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../src/assets/fonts/Manrope-Regular.ttf') format('truetype');
 }
 
@@ -131,6 +138,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url('../src/assets/fonts/Manrope-Medium.ttf') format('truetype');
 }
 
@@ -139,6 +147,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url('../src/assets/fonts/Manrope-SemiBold.ttf') format('truetype');
 }
 
@@ -147,5 +156,6 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../src/assets/fonts/Manrope-Bold.ttf') format('truetype');
 }
