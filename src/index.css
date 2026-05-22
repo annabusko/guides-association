@@ -1401,6 +1401,22 @@ h4 {
   }
 }
 
+.guides-loading {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .guides-loading {
+    min-height: 320px;
+  }
+}
+
+.content-wrapper-guides {
+  min-height: calc(100vh - 260px);
+}
+
 .content-wrapper-guides .ui.cards {
   display: flex !important;
   flex-wrap: wrap !important;

@@ -1,4 +1,21 @@
+// ── Loading placeholder ────────────────────────────────────────────────────
+
+.guides-loading {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include for-phone {
+        min-height: 320px;
+    }
+}
+
 // ── Card grid ──────────────────────────────────────────────────────────────
+
+.content-wrapper-guides {
+    min-height: calc(100vh - 260px);
+}
 
 .content-wrapper-guides .ui.cards {
     display: flex !important;

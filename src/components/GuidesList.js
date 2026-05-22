@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as guidesActions from '../assets/store/actions/guides';
 import FilterBlock from './FilterInterpreters';
+import Preloader from './Preloader';
 import * as filterLodash from 'lodash/filter';
 import * as isEmptyLodash from 'lodash/isEmpty';
 
@@ -78,9 +79,15 @@ class GuidesList extends Component {
           <FilterBlock type={this.props.type}/>
           <Card.Group itemsPerRow={3} stackable>
             {
-              !isReady ? 'Loading.....' : guides.map((guide, i) => (
-                <GuideCard key={i}{...guide} />
-              ))
+              !isReady ? (
+                <div className="guides-loading">
+                  <Preloader />
+                </div>
+              ) : (
+                guides.map((guide, i) => (
+                  <GuideCard key={i}{...guide} />
+                ))
+              )
             }
           </Card.Group>
         </div>
