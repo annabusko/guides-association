@@ -12,7 +12,7 @@ const MenuTitle = ({ title }) => {
 
 const CardTitle = ({ name }) => {
   const { t } = useTranslation();
-  return <h4>{t(name)}</h4>;
+  return <p className="card-title-text">{t(name)}</p>;
 };
 
 const CardText = ({ text }) => {

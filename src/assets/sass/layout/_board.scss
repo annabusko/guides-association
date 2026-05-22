@@ -128,7 +128,7 @@
         color: #2f2922 !important;
     }
 
-    h4 {
+    .card-title-text {
         @include font($size: 1.5rem, $family: $fontComfortaa, $weight: 700);
         margin: 0;
     }
