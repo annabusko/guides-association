@@ -33,6 +33,8 @@ class SimpleSlider extends Component {
                   <img
                     src={val.url}
                     alt={val.alt || ""}
+                    width={1920}
+                    height={1080}
                     className="carrousel_image_img"
                     loading={i === settings.initialSlide ? "eager" : "lazy"}
                     fetchPriority={i === settings.initialSlide ? "high" : "auto"}

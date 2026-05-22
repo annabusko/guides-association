@@ -18,6 +18,20 @@ const MenuTitle = ({ title, tg }) => {
   return (tg === 'h1' ? <h1>{t(title)}</h1> : <h2>{t(title)}</h2>);
 };
 
+const FALLBACK_GUIDE_IMAGE = `${process.env.PUBLIC_URL || ''}/interpreters/no-person.png`;
+
+const resolveGuideImage = (img) => {
+  if (!img || !img.trim()) {
+    return FALLBACK_GUIDE_IMAGE;
+  }
+
+  if (/^(https?:|data:|blob:|\/)/i.test(img)) {
+    return img;
+  }
+
+  return `${process.env.PUBLIC_URL || ''}/${img.replace(/^\.?\//, '')}`;
+};
+
 const GuideCard = (guide) => {
   const { name, email, phone, lang, city, img } = guide;
   return (
@@ -26,7 +40,14 @@ const GuideCard = (guide) => {
         <Image
           floated='left'
           size='small'
-          src={img ?? 'interpreters/no-person.png'}
+          src={resolveGuideImage(img)}
+          width={130}
+          height={150}
+          loading='lazy'
+          onError={(event) => {
+            event.currentTarget.onerror = null;
+            event.currentTarget.src = FALLBACK_GUIDE_IMAGE;
+          }}
         />
         <Card.Header>
           {name}
