@@ -23,16 +23,20 @@
         padding: 16px;
     }
 
+    .ui.dropdown,
+    .ui.input > input {
+        min-height: 56px !important;
+        font-size: 1.25rem !important;
+        color: #343a40 !important;
+    }
+
     .ui.dropdown {
-        min-height: 52px;
         border-radius: 14px !important;
 
         background: #fafafa !important;
         border: 1px solid rgba(0, 0, 0, 0.08) !important;
 
         font-family: $fontRoboto, sans-serif !important;
-        font-size: 1.12rem !important;
-        color: #343a40 !important;
 
         display: flex !important;
         align-items: center !important;
@@ -42,12 +46,39 @@
             border-color: rgba(0, 0, 0, 0.15) !important;
         }
 
+        > .text,
+        > .default.text {
+            color: #6c757d !important;
+            font-size: 1.25rem !important;
+            line-height: 56px !important;
+        }
+
+        > .dropdown.icon {
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            right: 18px !important;
+            margin: 0 !important;
+            color: #6c757d !important;
+            font-size: 1rem !important;
+        }
+
         .menu {
             border-radius: 14px !important;
             border: 1px solid rgba(0, 0, 0, 0.08) !important;
             box-shadow:
                 0 4px 14px rgba(0, 0, 0, 0.07),
                 0 12px 24px rgba(0, 0, 0, 0.04) !important;
+        }
+
+        &.selection .menu > .item {
+            font-size: 1.15rem !important;
+            padding: 14px 18px !important;
+            line-height: 1.35 !important;
+        }
+
+        &.multiple > .label {
+            font-size: 1rem !important;
+            padding: 8px 10px !important;
         }
     }
 
@@ -56,19 +87,27 @@
 
         > input {
             width: 100%;
-            min-height: 52px;
             border-radius: 14px !important;
 
             background: #fafafa !important;
             border: 1px solid rgba(0, 0, 0, 0.08) !important;
 
             font-family: $fontRoboto, sans-serif !important;
-            font-size: 1.12rem !important;
-            color: #343a40 !important;
+
+            &::placeholder {
+                color: #8a8a8a !important;
+                opacity: 1 !important;
+                font-size: 1.25rem !important;
+            }
 
             &:focus {
                 border-color: rgba(0, 0, 0, 0.18) !important;
             }
+        }
+
+        > i.icon {
+            color: #6c757d !important;
+            font-size: 1.35rem !important;
         }
     }
 }
