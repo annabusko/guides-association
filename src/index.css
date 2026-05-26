@@ -903,6 +903,7 @@ h4 {
 .carrousel_wrapper {
   position: relative;
   overflow: hidden;
+  contain: layout paint;
 }
 .carrousel_wrapper::before {
   content: "";
@@ -914,6 +915,10 @@ h4 {
   background: linear-gradient(to bottom, rgba(14, 10, 8, 0.42) 0%, transparent 100%);
   pointer-events: none;
   z-index: 1;
+}
+
+.carrousel_wrapper .slick-track {
+  will-change: transform;
 }
 
 .carrousel_wrapper,

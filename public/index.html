@@ -24,6 +24,39 @@
     content="общество экскурсоводов Беларусь, гид Беларусь, переводчик Беларусь, гид-переводчик, экскурсовод Беларусь">
   <meta name="author" content="Anna Busko">
 
+  <script>
+    (function () {
+      var manifestUrl = "%PUBLIC_URL%/asset-manifest.json";
+      var manifestImageKey = "static/media/6.webp";
+
+      function appendHeroPreload(href) {
+        if (!href || document.querySelector('link[data-hero-preload="true"]')) {
+          return;
+        }
+
+        var link = document.createElement("link");
+        link.rel = "preload";
+        link.as = "image";
+        link.href = href;
+        link.setAttribute("fetchpriority", "high");
+        link.dataset.heroPreload = "true";
+        document.head.appendChild(link);
+      }
+
+      fetch(manifestUrl, { credentials: "same-origin" })
+        .then(function (res) {
+          return res.ok ? res.json() : null;
+        })
+        .then(function (manifest) {
+          var heroSrc = manifest && manifest.files && manifest.files[manifestImageKey];
+          appendHeroPreload(heroSrc);
+        })
+        .catch(function () {
+          // No-op fallback for dev or unavailable manifest.
+        });
+    })();
+  </script>
+
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Белорусское общество экскурсоводов и гидов-переводчиков</title>
 

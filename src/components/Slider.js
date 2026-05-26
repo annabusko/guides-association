@@ -9,8 +9,8 @@ class SimpleSlider extends Component {
     const settings = {
       fade: true,
       dots: true,
-      infinite: true,
-      onLazyLoad: true,
+      infinite: false,
+      lazyLoad: "ondemand",
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -23,11 +23,19 @@ class SimpleSlider extends Component {
       focusOnChange: false,
     };
 
+    // Identify LCP image to prevent lazy-loading of clones
+    const INITIAL_SLIDE = settings.initialSlide;
+    const lcpImageUrl = images?.[INITIAL_SLIDE]?.url ?? null;
+
     return (
       <div className="carrousel_wrapper">
         <Slider {...settings}>
           {images ? (
-            images.map((val, i) => (
+            images.map((val, i) => {
+              // Prevent lazy-loading of LCP image in any instance (including clones)
+              const isLcpImage = i === INITIAL_SLIDE || (lcpImageUrl && val.url === lcpImageUrl);
+
+              return (
               <div key={val.url || i}>
                 <div className="carrousel_image">
                   <img
@@ -36,8 +44,8 @@ class SimpleSlider extends Component {
                     width={1920}
                     height={1080}
                     className="carrousel_image_img"
-                    loading={i === settings.initialSlide ? "eager" : "lazy"}
-                    fetchPriority={i === settings.initialSlide ? "high" : "auto"}
+                    loading={isLcpImage ? "eager" : "lazy"}
+                    fetchPriority={isLcpImage ? "high" : "auto"}
                     style={{
                       width: "100%",
                       height: "100%",
@@ -50,7 +58,8 @@ class SimpleSlider extends Component {
                   />
                 </div>
               </div>
-            ))
+              );
+            })
           ) : (
             <span>"Loading..."</span>
           )}
