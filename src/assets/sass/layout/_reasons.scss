@@ -8,7 +8,13 @@
     .reasons-content {
         text-align: justify;
         padding: 15px;
-        
+
+        .reason-title {
+            @include font($size: 1.9rem, $family: $fontComfortaa, $weight: 700);
+            margin-bottom: 5px;
+            line-height: 100%;
+            letter-spacing: 0em;
+        }
     }
 
 }

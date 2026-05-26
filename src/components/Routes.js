@@ -24,7 +24,7 @@ const RoutesBlock = () => {
                             <h3> {t('architecture_header')}</h3>
                             <p>{t('architecture_descr')}</p>
                         </div>
-                        <img alt={t('architecture_img')} loading="lazy" src={architecture} title={t('architecture_img')} />
+                        <img alt={t('architecture_img')} loading="lazy" src={architecture} title={t('architecture_img')} width={900} height={600} />
                     </div>
                 </Segment>
                 <Segment raised as='a'
@@ -38,7 +38,7 @@ const RoutesBlock = () => {
                             <p>{t('relygy_descr')}</p>
 
                         </div>
-                        <img alt={t('relygy_img')} loading="lazy" src={religy} title={t('relygy_img')}  />
+                        <img alt={t('relygy_img')} loading="lazy" src={religy} title={t('relygy_img')} width={900} height={600} />
                     </div>
                 </Segment>
                 <Segment raised as='a'
@@ -47,7 +47,7 @@ const RoutesBlock = () => {
                     target='_blank'
                     title= {t('industry_link')}>
                     <div className="route-right">
-                        <img alt={t('industry_img')} loading="lazy" src={industry} title={t('industry_img')} />
+                        <img alt={t('industry_img')} loading="lazy" src={industry} title={t('industry_img')} width={900} height={600} />
                         <div className="route-content">
                             <h3>{t('industry_header')}</h3>
                             <p>{t('industry_descr')}</p>
@@ -61,7 +61,7 @@ const RoutesBlock = () => {
                     target='_blank'
                     title= {t('nature_link')}>
                     <div className="route-left">
-                        <img alt={t('nature_img')} loading="lazy" src={nature} title={t('nature_img')} />
+                        <img alt={t('nature_img')} loading="lazy" src={nature} title={t('nature_img')} width={900} height={600} />
                         <div className="route-content">
                             <h3>{t('nature_header')}</h3>
                             <p>{t('nature_descr')}</p>

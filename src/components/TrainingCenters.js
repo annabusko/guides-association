@@ -73,7 +73,7 @@ const TrainingDetailCard = ({ centerId }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Image src={config.logo} alt="" className="training-detail__logo" />
+                    <Image src={config.logo} alt="" className="training-detail__logo" width={330} height={120} loading="lazy" />
                 </a>
                 <div className="training-detail__title-wrap">
                     <h3 className="training-detail__title">{t(config.titleKey)}</h3>

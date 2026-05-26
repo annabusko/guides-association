@@ -16,7 +16,7 @@ class AboutBlock extends Component {
         </div>
         <div className="content-wrapper content-wrapper-divided about-wrapper">
           <div className="about-image-card">
-            <img src={image_small.src} alt={image_small.alt} />
+            <img src={image_small.src} alt={image_small.alt} width={900} height={600} loading="lazy" />
           </div>
           <div className="content-text">{children}</div>
         </div>

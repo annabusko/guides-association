@@ -12,7 +12,7 @@ const MenuTitle = ({ title }) => {
 
 const CardTitle = ({ name }) => {
   const { t } = useTranslation();
-  return <h4>{t(name)}</h4>;
+  return <p className="card-title-text">{t(name)}</p>;
 };
 
 const CardText = ({ text }) => {
@@ -129,7 +129,7 @@ const comission = [
 const BoardCard = ({ data }) => (
   <Card centered color={data.color} className={data.classTitle}>
 
-    <Image src={data.src} wrapped ui={false} alt="" loading="lazy" />
+    <Image src={data.src} wrapped ui={false} alt="" loading="lazy" width={390} height={520} />
     <Card.Content>
       <Card.Header>{data.name}</Card.Header>
       {!data.meta ? null : <Card.Meta>

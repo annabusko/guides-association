@@ -75,7 +75,7 @@ const VerticalMenu = () => {
       <div className="header-flex-row">
         <BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
-      <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" />
+      <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" width={280} height={96} />
       <VerticalMenuBlock menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </Fragment>
   );
@@ -86,7 +86,7 @@ const HorizontalMenu = () => {
   return (
     <Fragment>
       <div className="header-brand">
-        <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" />
+        <Image verticalAlign='middle' src={logo} alt={`${t('title_part1')} ${t('title_part2')}`} className="logo" width={280} height={96} />
       </div>
       <div className="header-nav">
         <Menu className="main-menu" secondary inverted>

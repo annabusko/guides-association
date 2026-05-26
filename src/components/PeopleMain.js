@@ -18,9 +18,9 @@ const AboutBlock = () => {
             <h2>{t('about_header')}</h2>
             <div className=" block-grid about-grid">
                 <div className="about-column">
-                    <Image src={person1} size='small' circular centered alt={t('about_surname1')} loading="lazy" />
+                    <Image src={person1} size='small' circular centered alt={t('about_surname1')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname1')}</h4>
+                        <p className="person-name">{t('about_surname1')}</p>
                         <p>{t('about_position1')}</p>
                         <p>{t('about_description1')}</p>
                         <p>{t('capital')}</p>
@@ -28,9 +28,9 @@ const AboutBlock = () => {
                 </div>
 
                 <div className="about-column">
-                    <Image src={person7} size='small' circular centered alt={t('about_surname7')} loading="lazy" />
+                    <Image src={person7} size='small' circular centered alt={t('about_surname7')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname7')}</h4>
+                        <p className="person-name">{t('about_surname7')}</p>
                         <p>{t('about_position7')}</p>
                         <p>{t('about_description7')}</p>
                         <p>{t('capital')}</p>
@@ -38,9 +38,9 @@ const AboutBlock = () => {
                 </div>
 
                 <div className="about-column">
-                    <Image src={person2} size='small' circular centered alt={t('about_surname2')} loading="lazy" />
+                    <Image src={person2} size='small' circular centered alt={t('about_surname2')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname2')}</h4>
+                        <p className="person-name">{t('about_surname2')}</p>
                         <p>{t('about_position2')}</p>
                         <p>{t('about_description2')}</p>
                         <p>{t('capital')}</p>
@@ -48,9 +48,9 @@ const AboutBlock = () => {
                 </div>
 
                 <div className="about-column">
-                    <Image src={person3} size='small' circular centered alt={t('about_surname3')} loading="lazy" />
+                    <Image src={person3} size='small' circular centered alt={t('about_surname3')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname3')}</h4>
+                        <p className="person-name">{t('about_surname3')}</p>
                         <p>{t('about_position3')}</p>
                         <p>{t('about_description3')}</p>
                         <p>{t('city_Mogilev')}</p>
@@ -58,18 +58,18 @@ const AboutBlock = () => {
                 </div>
 
                 <div className="about-column">
-                    <Image src={person4} size='small' circular centered alt={t('about_surname4')} loading="lazy" />
+                    <Image src={person4} size='small' circular centered alt={t('about_surname4')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname4')}</h4>
+                        <p className="person-name">{t('about_surname4')}</p>
                         <p>{t('about_position4')}</p>
                         <p>{t('about_description4')}</p>
                         <p>{t('city_Brest')}</p>
                     </div>
                 </div>
                 <div className="about-column">
-                    <Image src={person5} size='small' circular centered alt={t('about_surname5')} loading="lazy" />
+                    <Image src={person5} size='small' circular centered alt={t('about_surname5')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname5')}</h4>
+                        <p className="person-name">{t('about_surname5')}</p>
                         <p>{t('about_position5')}</p>
                         <p>{t('about_description5')}</p>
                         <p>{t('city_Grodno')}</p>
@@ -77,9 +77,9 @@ const AboutBlock = () => {
                 </div>
 
                 <div className="about-column">
-                    <Image src={person6} size='small' circular centered alt={t('about_surname6')} loading="lazy" />
+                    <Image src={person6} size='small' circular centered alt={t('about_surname6')} loading="lazy" width={150} height={150} />
                     <div>
-                        <h4>{t('about_surname6')}</h4>
+                        <p className="person-name">{t('about_surname6')}</p>
                         <p>{t('about_position6')}</p>
                         <p>{t('about_description6')}</p>
                         <p>{t('city_Gomel')}</p>
@@ -88,9 +88,9 @@ const AboutBlock = () => {
 
            
                 <div className="about-column">
-                    <Image src={person8} size='small' circular centered alt={t('about_surname8')} loading="lazy" />
+                    <Image src={person8} size='small' circular centered alt={t('about_surname8')} loading="lazy" width={150} height={150} />
                     <div >
-                        <h4>{t('about_surname8')}</h4>
+                        <p className="person-name">{t('about_surname8')}</p>
                         <p>{t('about_position8')}</p>
                         <p>{t('about_description8')}</p>
                         <p>{t('capital')}</p>
