@@ -218,22 +218,47 @@
 // ── Mobile ─────────────────────────────────────────────────────────────────
 
 @include for-phone {
+    // Remove fixed minimum so card shrinks to its content
+    .guides-search.ui.card {
+        min-height: unset !important;
+    }
+
+    // Switch to single-column vertical layout
     .guides-search .content:first-child {
         grid-template-columns: 1fr;
         row-gap: 10px;
+        padding: 16px !important;
     }
 
+    // Full-width banner image, portrait crop centered
     .guides-search .ui.image {
         grid-column: 1;
         grid-row: auto;
         width: 100% !important;
         height: 220px !important;
         min-width: unset;
+        object-position: center;
+
+        img {
+            object-position: center;
+        }
     }
 
-    .guides-search .header,
-    .guides-search .meta,
+    // Name: small breathing room above so it doesn't touch the image
+    .guides-search .header {
+        grid-column: 1;
+        margin-top: 4px !important;
+    }
+
+    // City: extra separation before language badges
+    .guides-search .meta {
+        grid-column: 1;
+        margin-bottom: 10px !important;
+    }
+
+    // Badges: full width, wrap naturally, no overflow
     .guides-search .guides-description {
         grid-column: 1;
+        overflow: hidden;
     }
 }
