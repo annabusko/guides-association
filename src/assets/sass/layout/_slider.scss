@@ -139,6 +139,7 @@
 .carrousel_wrapper {
   position: relative;
   overflow: hidden;
+  contain: layout paint;
 
   &::before {
     content: '';
@@ -151,6 +152,10 @@
     pointer-events: none;
     z-index: 1;
   }
+}
+
+.carrousel_wrapper .slick-track {
+  will-change: transform;
 }
 
 .carrousel_wrapper,

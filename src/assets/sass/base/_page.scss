@@ -1,6 +1,7 @@
 html,
 body {
     font-size: 10px;
+    font-family: $fontRoboto;
     @include for-phone {
         font-size: 7px;
     }
