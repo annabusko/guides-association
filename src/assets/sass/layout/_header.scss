@@ -78,18 +78,18 @@
     flex-wrap: wrap !important;
     justify-content: center !important;
 
-    @include font($size: 1.22rem, $family: $fontManrope, $weight: 500);
+    @include font($size: 1.22rem, $family: $fontRoboto, $weight: 500);
 
     @include for-tablet {
-      @include font($size: 1.3rem, $family: $fontManrope, $weight: 500);
+      @include font($size: 1.3rem, $family: $fontRoboto, $weight: 500);
     }
 
     @include for-desktop {
-      @include font($size: 1.42rem, $family: $fontManrope, $weight: 500);
+      @include font($size: 1.42rem, $family: $fontRoboto, $weight: 500);
     }
 
     @include for-desktop-up {
-      @include font($size: 1.55rem, $family: $fontManrope, $weight: 500);
+      @include font($size: 1.55rem, $family: $fontRoboto, $weight: 500);
     }
 
     &>.item,
@@ -109,9 +109,7 @@
       color: #fff !important;
       background: transparent !important;
 
-      font-family: $fontManrope !important;
-      font-weight: 500 !important;
-      line-height: 1 !important;
+      font-family: $fontRoboto !important;
 
       transition:
         background 0.18s ease,
@@ -182,7 +180,7 @@
 
       border-radius: 10px !important;
 
-      font-family: $fontManrope !important;
+      font-family: $fontRoboto !important;
       font-size: 1.12rem !important;
       font-weight: 500 !important;
       line-height: 1.35 !important;
@@ -241,7 +239,7 @@
     border: none;
     background: transparent;
     color: #fff;
-    font-family: $fontManrope, sans-serif;
+    font-family: $fontRoboto;
     font-weight: 600;
     font-size: 1.05rem;
     letter-spacing: 0.04em;
@@ -284,7 +282,7 @@
 }
 
 .ui.menu.vertical-menu {
-  @include font($size: 1.4rem, $family: $fontManrope, $weight: 700);
+  @include font($size: 1.4rem, $family: $fontRoboto, $weight: 700);
   background-color: rgba(12, 12, 12, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);

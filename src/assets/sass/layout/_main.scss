@@ -9,12 +9,12 @@ h4 {
 }
 
 h1 {
-  @include font($size: 6.5rem, $family: $fontManrope, $weight: 900);
+  @include font($size: 6.5rem, $family: $fontComfortaa, $weight: 900);
   @include for-phone {
-    @include font($size: 5rem, $family: $fontManrope, $weight: 900);
+    @include font($size: 5rem, $family: $fontComfortaa, $weight: 900);
   }
   @include for-small-phone {
-    @include font($size: 4.5rem, $family: $fontManrope, $weight: 900);
+    @include font($size: 4.5rem, $family: $fontComfortaa, $weight: 900);
   }
 }
 h2 {
