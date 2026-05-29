@@ -45,7 +45,7 @@ class SimpleSlider extends Component {
                     height={1080}
                     className="carrousel_image_img"
                     loading={isLcpImage ? "eager" : "lazy"}
-                    fetchPriority={isLcpImage ? "high" : "auto"}
+                    fetchpriority={isLcpImage ? "high" : "auto"}
                     style={{
                       width: "100%",
                       height: "100%",

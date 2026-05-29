@@ -75,7 +75,8 @@ const GuideCard = (guide) => {
 
 class GuidesList extends Component {
   componentDidMount() {
-    const { setGuides } = this.props;
+    const { setGuides, setIsReady } = this.props;
+    setIsReady(false);
     axios.get(this.props.fileName).then(({ data }) => {
       setGuides(data);
     });

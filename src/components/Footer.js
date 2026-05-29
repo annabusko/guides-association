@@ -25,7 +25,8 @@ const FooterBlock = () => {
                             {t('menu_guide')}
                             <List.List>
                                 <List.Item as={Link} to='/guide-main'> {t('menu_guide-main')}</List.Item>
-                                <List.Item as={Link} to='/guide-search'>{t('menu_guide-search')} </List.Item>
+                                <List.Item as={Link} to='/guide1-search'>{t('menu_guide-search')} </List.Item>
+                                <List.Item as={Link} to='/guide2-search'>{t('menu_guide2-search')} </List.Item>
                             </List.List>
                         </List.Item>
                      
@@ -34,7 +35,6 @@ const FooterBlock = () => {
                             <List.List>
                                 <List.Item as={Link} to='/certification'> {t('menu_certification')}</List.Item>
                                 <List.Item as={Link} to='/professional-development'>{t('menu_professional-development')} </List.Item>
-                                <List.Item as={Link} to='/seminars'>{t('menu_seminars')}</List.Item>
                             </List.List>
                         </List.Item>
 

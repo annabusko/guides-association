@@ -31,8 +31,6 @@ function MenuItems() {
     "certification",
     "/professional-development",
     "professional-development",
-    "/seminars",
-    "seminars",
   ].includes(activeItem);
 
   return (
@@ -151,14 +149,6 @@ function MenuItems() {
               activeItem === "professional-development"
             }
             onClick={() => setActiveItem("professional-development")}
-          />
-          <Dropdown.Item
-            text={t("menu_seminars")}
-            as={Link}
-            to="/seminars"
-            value="seminars"
-            active={activeItem === "/seminars" || activeItem === "seminars"}
-            onClick={() => setActiveItem("seminars")}
           />
         </Dropdown.Menu>
       </Dropdown>

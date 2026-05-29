@@ -54,6 +54,7 @@ const citiesLarge = [
 ]
 
 const mapStateToProps = ({ filter }) => ({
+  searchQuery: filter.searchQuery,
   filterLang: filter.filterLang,
   filterCity: filter.filterCity
 });
