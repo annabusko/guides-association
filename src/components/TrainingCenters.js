@@ -9,7 +9,7 @@ const imgLogo2 = require('../assets/images/different/logoTraining2.webp');
 
 const CENTER_LINKS = {
     1: 'https://www.belarustourism.by/uslugi/obuchenie/',
-    2: 'http://www.uoipd.by/ru/institute/shkola-ekskursovodov-i-gidov-perevodchikov.html',
+    2: 'https://www.uoipd.by/ru/institute/shkola-ekskursovodov-i-gidov-perevodchikov.html',
 };
 
 const CENTER_ITEMS = {

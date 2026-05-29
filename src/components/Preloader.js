@@ -2,7 +2,7 @@ import React from 'react';
 
 const Preloader = () => {
     return (
-        <div className="container">
+        <div className="container" role="status" aria-label="Loading">
         <div className="item-1"><div></div></div>
         <div className="item-2"><div></div></div>
         <div className="item-3"><div></div></div>

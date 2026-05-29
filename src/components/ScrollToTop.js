@@ -45,9 +45,14 @@ export default class ScrollToTop extends Component {
     return (
       <div className="scroll-to-top">
         {is_visible && (
-          <div onClick={() => this.scrollToTop()} className="button button-scroll">
+          <button
+            type="button"
+            onClick={() => this.scrollToTop()}
+            className="button button-scroll"
+            aria-label="Scroll to top"
+          >
             <FontAwesomeIcon icon={faChevronUp} size="7x"/>
-          </div>
+          </button>
         )}
       </div>
     );

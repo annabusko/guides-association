@@ -3,3 +3,8 @@ export const setGuides = guides => ({
     payload: guides
 });
 
+export const setIsReady = isReady => ({
+    type: 'SET_IS_READY',
+    payload: isReady
+});
+

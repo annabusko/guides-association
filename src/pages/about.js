@@ -49,13 +49,13 @@ const RulesBlock = () => {
             <h2>{t('menu_rules')}</h2>
             <p>{t('about_rules1')}</p>
             <p>{t('about_rules2')}</p>
+            <p>{t('about_rules3')}</p>
             <ul>
-                <p>{t('about_rules3')}</p>
                 <li>{t('about_rules3_1')} </li>
                 <li>{t('about_rules3_2')} </li>
             </ul>
+            <p>{t('about_rules4')}</p>
             <ul>
-                <p>{t('about_rules4')}</p>
                 <li>{t('about_rules4_1')} </li>
                 <li>{t('about_rules4_2')} </li>
                 <li>{t('about_rules4_3')} </li>
@@ -63,8 +63,8 @@ const RulesBlock = () => {
                 <li>{t('about_rules4_5')} </li>
                 <li>{t('about_rules4_6')} </li>
             </ul>
+            <p>{t('about_rules5')}</p>
             <ul>
-                <p>{t('about_rules5')}</p>
                 <li>{t('about_rules5_1')} </li>
                 <li>{t('about_rules5_2')} </li>
                 <li>{t('about_rules5_3')} </li>

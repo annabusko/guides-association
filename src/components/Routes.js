@@ -42,7 +42,7 @@ const RoutesBlock = () => {
                     </div>
                 </Segment>
                 <Segment raised as='a'
-                    href='http://belaz.by/about/industrial-tourism/'
+                    href='https://belaz.by/about/industrial-tourism/'
                     rel= 'noopener noreferrer'
                     target='_blank'
                     title= {t('industry_link')}>
